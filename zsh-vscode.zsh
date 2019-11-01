@@ -28,28 +28,42 @@ function vscode::post_install {
         echo -e "${CLEAR}${LIGHT_GREEN}Installing required vscode packages${CLEAR}"
         code --install-extension bierner.markdown-preview-github-styles
         code --install-extension christian-kohler.npm-intellisense
-        code --install-extension Dart-Code.flutter
         code --install-extension EditorConfig.EditorConfig
         code --install-extension gornivv.vscode-flutter-files
         code --install-extension ms-azuretools.vscode-docker
 
+        # languages
         code --install-extension ms-python.python
         code --install-extension ms-vscode.Go
         code --install-extension trixnz.vscode-lua
         code --install-extension vscodevim.vim
         code --install-extension Dart-Code.dart-code
         code --install-extension mauve.terraform
+        code --install-extension Dart-Code.flutter
 
-        code --install-extension erd0s.terraform-autocomplete
-
-        code --install-extension timonwong.shellcheck
+        # git
+        code --install-extension felipecaputo.git-project-manager
+        code --install-extension eamodio.gitlens
         code --install-extension waderyan.gitblame
+
+        # tools
+        code --install-extension erd0s.terraform-autocomplete
+        code --install-extension hookyqr.beautify
+        code --install-extension CoenraadS.bracket-pair-colorizer
+        code --install-extension christian-kohler.path-intellisense
+        code --install-extension 30-seconds.30-seconds-of-code
+        code --install-extension mikestead.dotenv
+        code --install-extension timonwong.shellcheck
         code --install-extension WakaTime.vscode-wakatime
         code --install-extension aeschli.vscode-css-formatter
-        code --install-extension mikestead.dotenv
         code --install-extension mgmcdermott.vscode-language-babel
-        code --install-extension christian-kohler.path-intellisense
         code --install-extension wix.vscode-import-cost
+
+        # intellisense
+        code --install-extension christian-kohler.path-intellisense
+
+        # debug
+        code --install-extension msjsdiag.debugger-for-chrome
     fi
 }
 
