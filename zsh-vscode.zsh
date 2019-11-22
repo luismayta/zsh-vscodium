@@ -43,7 +43,6 @@ function vscode::post_install {
 
         # git
         code --install-extension felipecaputo.git-project-manager
-        code --install-extension eamodio.gitlens
         code --install-extension waderyan.gitblame
 
         # tools
@@ -51,13 +50,11 @@ function vscode::post_install {
         code --install-extension hookyqr.beautify
         code --install-extension CoenraadS.bracket-pair-colorizer
         code --install-extension christian-kohler.path-intellisense
-        code --install-extension 30-seconds.30-seconds-of-code
         code --install-extension mikestead.dotenv
         code --install-extension timonwong.shellcheck
         code --install-extension WakaTime.vscode-wakatime
         code --install-extension aeschli.vscode-css-formatter
         code --install-extension mgmcdermott.vscode-language-babel
-        code --install-extension wix.vscode-import-cost
 
         # intellisense
         code --install-extension christian-kohler.path-intellisense
