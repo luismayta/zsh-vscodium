@@ -16,6 +16,10 @@ source "${plugin_dir}"/src/helpers/messages.zsh
 # shellcheck source=/dev/null
 source "${plugin_dir}"/src/helpers/tools.zsh
 
+function code_install {
+    code --install-extension "${1}" --force
+}
+
 function vscode::install {
     message_info "Installing vscode"
     brew cask install visual-studio-code
@@ -32,45 +36,45 @@ function vscode::post_install {
     vscode::load
     if [ -x "$(command which code)" ]; then
         message_info "Installing required vscode packages"
-        code --install-extension bierner.markdown-preview-github-styles
-        code --install-extension christian-kohler.npm-intellisense
-        code --install-extension EditorConfig.EditorConfig
-        code --install-extension gornivv.vscode-flutter-files
-        code --install-extension ms-azuretools.vscode-docker
+        code_install bierner.markdown-preview-github-styles
+        code_install christian-kohler.npm-intellisense
+        code_install EditorConfig.EditorConfig
+        code_install gornivv.vscode-flutter-files
+        code_install ms-azuretools.vscode-docker
 
         message_info "Installing required vscode packages for languages"
         # languages
-        code --install-extension ms-python.python
-        code --install-extension ms-vscode.Go
-        code --install-extension trixnz.vscode-lua
-        code --install-extension vscodevim.vim
-        code --install-extension Dart-Code.dart-code
-        code --install-extension mauve.terraform
-        code --install-extension Dart-Code.flutter
+        code_install ms-python.python
+        code_install ms-vscode.Go
+        code_install trixnz.vscode-lua
+        code_install vscodevim.vim
+        code_install Dart-Code.dart-code
+        code_install mauve.terraform
+        code_install Dart-Code.flutter
 
         message_info "Installing required vscode packages for git"
         # git
-        code --install-extension felipecaputo.git-project-manager
+        code_install felipecaputo.git-project-manager
 
         message_info "Installing required vscode packages for tools"
         # tools
-        code --install-extension erd0s.terraform-autocomplete
-        code --install-extension hookyqr.beautify
-        code --install-extension CoenraadS.bracket-pair-colorizer
-        code --install-extension christian-kohler.path-intellisense
-        code --install-extension mikestead.dotenv
-        code --install-extension timonwong.shellcheck
-        code --install-extension WakaTime.vscode-wakatime
-        code --install-extension aeschli.vscode-css-formatter
-        code --install-extension mgmcdermott.vscode-language-babel
+        code_install erd0s.terraform-autocomplete
+        code_install hookyqr.beautify
+        code_install CoenraadS.bracket-pair-colorizer
+        code_install christian-kohler.path-intellisense
+        code_install mikestead.dotenv
+        code_install timonwong.shellcheck
+        code_install WakaTime.vscode-wakatime
+        code_install aeschli.vscode-css-formatter
+        code_install mgmcdermott.vscode-language-babel
 
         message_info "Installing required vscode packages for intellisense"
         # intellisense
-        code --install-extension christian-kohler.path-intellisense
+        code_install christian-kohler.path-intellisense
 
         message_info "Installing required vscode packages for debug"
         # debug
-        code --install-extension msjsdiag.debugger-for-chrome
+        code_install msjsdiag.debugger-for-chrome
     fi
 }
 
