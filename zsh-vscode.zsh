@@ -7,13 +7,13 @@
 # Authors:
 #   Luis Mayta <slovacus@gmail.com>
 
-plugin_dir=$(dirname "${0}":A)
+ZSH_VSCODE_PATH_ROOT=$(dirname "${0}":A)
 
 # shellcheck source=/dev/null
-source "${plugin_dir}"/src/helpers/messages.zsh
+source "${ZSH_VSCODE_PATH_ROOT}"/src/helpers/messages.zsh
 
 # shellcheck source=/dev/null
-source "${plugin_dir}"/src/helpers/tools.zsh
+source "${ZSH_VSCODE_PATH_ROOT}"/src/helpers/tools.zsh
 
 function code_install {
     code --install-extension "${1}" --force
