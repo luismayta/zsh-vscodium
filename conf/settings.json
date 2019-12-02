@@ -161,6 +161,9 @@
   "editor.minimap.enabled": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
+  "workbench.colorCustomizations": {
+    "tab.unfocusedActiveBorder": "#fff0"
+  },
   "vim.neovimPath": "/usr/local/bin/nvim",
   "terminal.integrated.macOptionIsMeta": true,
   "markdown.preview.fontSize": 16,
