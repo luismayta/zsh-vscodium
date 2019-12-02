@@ -73,6 +73,7 @@ function vscode::post_install {
         code_install dbaeumer.vscode-eslint
         code_install eg2.vscode-npm-script
         code_install Tyriar.sort-lines
+        code_install silvenon.mdx
 
         # intellisense
         message_info "Installing required vscode packages for intellisense"
