@@ -7,7 +7,9 @@
 # Authors:
 #   Luis Mayta <slovacus@gmail.com>
 
+vscode_package_name="vscode"
 ZSH_VSCODE_PATH_ROOT=$(dirname "${0}":A)
+VSCODE_PATH_CODE_USER="${HOME}"/Library/Application\ Support/Code/User
 
 # shellcheck source=/dev/null
 source "${ZSH_VSCODE_PATH_ROOT}"/src/helpers/messages.zsh
@@ -25,10 +27,25 @@ function vscode::install {
     message_success "Installed vscode"
 }
 
+function rsync::install {
+    message_info "Installing rsync for ${vscode_package_name}"
+    if ! type -p brew > /dev/null; then
+        message_error "it's neccesary brew, add: luismayta/zsh-brew"
+    fi
+    brew install rsync
+    message_success "Installed rsync ${vscode_package_name}"
+}
+
+if ! type -p rsync > /dev/null; then rsync::install; fi
+
 function vscode::init {
     if [ ! -x "$(command which code)" ]; then
         message_error "Is Neccesary Installing required vscode packages"
     fi
+}
+
+function vscode::sync {
+    rsync -avzh --progress "${ZSH_VSCODE_PATH_ROOT}/conf/" "${VSCODE_PATH_CODE_USER}/"
 }
 
 function vscode::post_install {
