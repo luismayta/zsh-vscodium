@@ -41,6 +41,7 @@ function vscode::post_install {
         code_install gornivv.vscode-flutter-files
         code_install ms-azuretools.vscode-docker
         code_install wix.vscode-import-cost
+        code_install aaron-bond.better-comments
 
         # languages
         message_info "Installing required vscode packages for languages"
@@ -71,6 +72,7 @@ function vscode::post_install {
         code_install bierner.markdown-preview-github-styles
         code_install dbaeumer.vscode-eslint
         code_install eg2.vscode-npm-script
+        code_install Tyriar.sort-lines
 
         # intellisense
         message_info "Installing required vscode packages for intellisense"
@@ -93,11 +95,15 @@ function vscode::post_install {
         # Tools
         message_info "Installing required vscode packages for tool"
         code_install esbenp.prettier-vscode
+        code_install yatki.vscode-surround
 
         # TypeScript
         message_info "Installing required vscode packages for typescript"
         code_install pmneo.tsimporter
         code_install rbbit.typescript-hero
+        code_install steoates.autoimport
+        code_install dotup.dotup-vscode-interface-generator
+
 
         # theme
         message_info "Installing required vscode packages for Theme"
@@ -105,7 +111,7 @@ function vscode::post_install {
 
         # vim
         message_info "Installing required vscode packages for vim"
-        code_install yatki.vscode-surround
+
         code_install vscodevim.vim
 
         # snippets
