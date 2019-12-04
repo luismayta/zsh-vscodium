@@ -34,6 +34,10 @@
     "command": "workbench.action.splitEditorDown"
   },
   {
+    "key": "ctrl+x 1",
+    "command": "workbench.action.editorLayoutSingle"
+  },
+  {
     "key": "ctrl+x 0",
     "command": "workbench.action.closeActiveEditor"
   },
@@ -62,19 +66,19 @@
     "command": "workbench.action.previousEditor"
   },
   {
-    "key": "ctrl+meta+up",
+    "key": "ctrl+x up",
     "command": "workbench.action.navigateUp"
   },
   {
-    "key": "ctrl+meta+down",
+    "key": "ctrl+x down",
     "command": "workbench.action.navigateDown"
   },
   {
-    "key": "ctrl+meta+left",
+    "key": "ctrl+x left",
     "command": "workbench.action.navigateLeft"
   },
   {
-    "key": "ctrl+meta+right",
+    "key": "ctrl+x right",
     "command": "workbench.action.navigateRight"
   }
 ]
