@@ -94,7 +94,7 @@
       "before": ["<leader>", "f", "f"],
       "commands": [
         {
-          "command": "workbench.view.search"
+          "command": "fuzzySearch.activeTextEditor"
         }
       ]
     },
