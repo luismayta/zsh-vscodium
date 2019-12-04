@@ -30,6 +30,7 @@
   },
   "vim.leader": ",",
   "vim.useSystemClipboard": true,
+  "vim.iskeyword": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "b"],
