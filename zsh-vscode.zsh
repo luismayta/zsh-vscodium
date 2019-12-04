@@ -93,6 +93,9 @@ function vscode::post_install {
         code_install silvenon.mdx
         code_install selbh.keyboard-scroll
 
+        # buffers
+        code_instlal serafeim.goto-previous-buffer
+
         # intellisense
         message_info "Installing required vscode packages for intellisense"
         code_install christian-kohler.path-intellisense
