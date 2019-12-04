@@ -80,5 +80,21 @@
   {
     "key": "ctrl+x right",
     "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+x k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+x j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+x l",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+x h",
+    "command": "workbench.action.navigateRight"
   }
 ]
