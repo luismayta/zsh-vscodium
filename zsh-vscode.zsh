@@ -69,6 +69,8 @@ function vscode::post_install {
         code_install mauve.terraform
         code_install Dart-Code.flutter
 
+        code_install kumar-harsh.graphql-for-vscode
+
         # git
         message_info "Installing required vscode packages for git"
         code_install felipecaputo.git-project-manager
