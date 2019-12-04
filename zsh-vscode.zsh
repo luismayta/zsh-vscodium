@@ -85,7 +85,7 @@ function vscode::post_install {
         code_install mgmcdermott.vscode-language-babel
         code_install formulahendry.auto-rename-tag
         code_install Gruntfuggly.todo-tree
-        code_instal streetsidesoftware.code-spell-checker
+        code_install streetsidesoftware.code-spell-checker
         code_install bierner.markdown-preview-github-styles
         code_install dbaeumer.vscode-eslint
         code_install eg2.vscode-npm-script
