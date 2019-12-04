@@ -1,17 +1,23 @@
 {
-  "python.jediEnabled": false,
-  "zenMode.hideStatusBar": false,
-  "zenMode.centerLayout": false,
-  "zenMode.hideActivityBar": false,
-  "zenMode.hideTabs": false,
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
   "editor.lineNumbers": "relative",
   "editor.rulers": [80, 120],
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.tabCompletion": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "Ariake Dark",
+  "files.associations": {
+    "*.py": "python"
+  },
   "files.exclude": {
     "*_pycache_*": true,
     ".pytest_cache": true,
@@ -19,6 +25,9 @@
     "htmlcov": true,
     "*.egg-info": true,
     "*.pyc": true
+  },
+  "files.watcherExclude": {
+    "**/local/**": true
   },
   "search.exclude": {
     "*_pycache_*": true,
@@ -136,42 +145,32 @@
       ]
     }
   ],
-  "gitProjectManager.baseProjectsFolders": ["~/Projects"],
-  "gitProjectManager.storeRepositoriesBetweenSessions": true,
-  "terminal.integrated.fontFamily": "Fira Code",
-  "window.zoomLevel": 0,
-  "python.linting.mypyEnabled": true,
-  "python.linting.pycodestyleEnabled": true,
-  "zenMode.fullScreen": true,
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.copyOnSelection": true,
-  "editor.tabCompletion": true,
-  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
-  },
   "vim.easymotionMarkerFontFamily": "Fira Code",
   "vim.enableNeovim": true,
   "vim.easymotionMarkerFontSize": "16",
   "vim.easymotionMarkerYOffset": 12,
   "vim.easymotionMarkerHeight": 24,
   "vim.easymotionMarkerBackgroundColor": "rgba(40, 40, 40, 0.5)",
-  "editor.formatOnSave": true,
-  "editor.minimap.enabled": false,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "gitProjectManager.baseProjectsFolders": ["~/Projects"],
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "window.zoomLevel": 0,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
+  "workbench.editor.highlightModifiedTabs": true,
   "workbench.colorCustomizations": {
     "tab.unfocusedActiveBorder": "#fff0"
   },
-  "vim.neovimPath": "/usr/local/bin/nvim",
+  "workbench.colorTheme": "Ariake Dark",
   "terminal.integrated.macOptionIsMeta": true,
   "markdown.preview.fontSize": 16,
   "path-intellisense.autoSlashAfterDirectory": true,
   "explorer.confirmDragAndDrop": false,
   "workbench.iconTheme": "vscode-icons",
-  "zenMode.hideLineNumbers": false,
   "window.restoreFullscreen": true,
   "go.autocompleteUnimportedPackages": true,
   "prettier.arrowParens": "always",
@@ -184,11 +183,17 @@
     "type": "none"
   },
   "explorer.confirmDelete": false,
-  "files.associations": {
-    "*.py": "python"
-  },
   "python.venvPath": "~/.local/share/virtualenvs/",
+  "python.linting.mypyEnabled": true,
+  "python.linting.pycodestyleEnabled": true,
+  "python.jediEnabled": false,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "zenMode.hideStatusBar": false,
+  "zenMode.centerLayout": false,
+  "zenMode.hideActivityBar": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.fullScreen": true,
+  "zenMode.hideTabs": false
 }
