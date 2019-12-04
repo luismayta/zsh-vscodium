@@ -91,6 +91,7 @@ function vscode::post_install {
         code_install eg2.vscode-npm-script
         code_install Tyriar.sort-lines
         code_install silvenon.mdx
+        code_install selbh.keyboard-scroll
 
         # intellisense
         message_info "Installing required vscode packages for intellisense"
