@@ -100,6 +100,7 @@ function vscode::post_install {
         code_install leizongmin.node-module-intellisense
         code_install jasonnutter.search-node-modules
         code_install erd0s.terraform-autocomplete
+        code_install kiteco.kite
 
         # debug
         message_info "Installing required vscode packages for debug"
