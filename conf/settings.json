@@ -116,10 +116,18 @@
       ]
     },
     {
-      "before": ["<leader>", "f", "f"],
+      "before": ["<leader>", "/"],
       "commands": [
         {
           "command": "fuzzySearch.activeTextEditor"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": [
+        {
+          "command": "workbench.action.findInFiles"
         }
       ]
     },
