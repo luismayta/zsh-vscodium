@@ -95,6 +95,7 @@ function vscode::post_install {
 
         # buffers
         code_instlal serafeim.goto-previous-buffer
+        code_install will-wow.vscode-open-buffers
 
         # intellisense
         message_info "Installing required vscode packages for intellisense"

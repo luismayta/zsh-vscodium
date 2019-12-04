@@ -32,7 +32,17 @@
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "gp"],
+      "before": ["<leader>", "b"],
+      "after": [],
+      "commands": [
+        {
+          "command": "open-buffers.openBuffer",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "g", "p"],
       "after": [],
       "commands": [
         {
