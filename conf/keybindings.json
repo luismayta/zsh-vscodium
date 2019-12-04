@@ -1,10 +1,5 @@
 [
   {
-    "command": "workbench.action.git.globalOpenChange",
-    "key": "cmd+c",
-    "when": "textCompareEditorVisible"
-  },
-  {
     "command": "workbench.action.terminal.focus",
     "key": "cmd+shift+z"
   },
