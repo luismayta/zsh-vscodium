@@ -23,11 +23,63 @@
     "when": "terminalFocus"
   },
   {
+    "key": "ctrl+x 3",
+    "command": "-workbench.action.toggleEditorGroupLayout"
+  },
+  {
+    "key": "ctrl+x 3",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+x 2",
+    "command": "-workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+x 2",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "ctrl+x 0",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "extension.file-picker.openFileRelativeToOpenedFile"
+  },
+  {
+    "key": "alt+x",
+    "command": "workbench.action.showCommands"
+  },
+  {
     "command": "workbench.action.nextEditor",
     "key": "cmd+l"
   },
   {
     "command": "workbench.action.previousEditor",
     "key": "cmd+h"
+  },
+  {
+    "key": "cmd+right",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+left",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+meta+up",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+meta+down",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+meta+left",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+meta+right",
+    "command": "workbench.action.navigateRight"
   }
 ]
