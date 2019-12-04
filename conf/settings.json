@@ -32,21 +32,11 @@
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "b"],
+      "before": ["<leader>", "gp"],
       "after": [],
       "commands": [
         {
-          "command": "workbench.action.previousEditor",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "g"],
-      "after": [],
-      "commands": [
-        {
-          "command": "editor.action.goToDeclaration",
+          "command": "extension.goto-previous-buffer",
           "args": []
         }
       ]
