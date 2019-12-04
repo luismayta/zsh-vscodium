@@ -94,7 +94,7 @@ function vscode::post_install {
         code_install selbh.keyboard-scroll
 
         # buffers
-        code_instlal serafeim.goto-previous-buffer
+        code_install serafeim.goto-previous-buffer
         code_install will-wow.vscode-open-buffers
 
         # intellisense
