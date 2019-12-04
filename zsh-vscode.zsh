@@ -116,6 +116,8 @@ function vscode::post_install {
         message_info "Installing required vscode packages for tool"
         code_install esbenp.prettier-vscode
         code_install yatki.vscode-surround
+        code_install jacobdufault.fuzzy-search
+        code_install wehrstedtcoding.file-picker
 
         # TypeScript
         message_info "Installing required vscode packages for typescript"
