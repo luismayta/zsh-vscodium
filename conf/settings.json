@@ -43,6 +43,7 @@
     "*.egg-info": true
   },
   "vim.leader": ",",
+  "vim.autoindent": true,
   "vim.useSystemClipboard": true,
   "vim.iskeyword": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
   "vim.statusBarColorControl": true,
@@ -67,6 +68,16 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["z", "i"],
+      "commands": [{ "command": "workbench.action.zoomIn" }]
+    },
+    {
+      "before": ["z", "o"],
+      "commands": [
+        { "command": "workbench.action.zoomOut" }
+      ]
+    },
     {
       "before": ["<leader>", "b"],
       "after": [],
@@ -180,6 +191,12 @@
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["?"],
+      "commands": [
+        { "command": "workbench.action.findInFiles" }
+      ]
+    },
     {
       "before": [">"],
       "commands": ["editor.action.indentLines"]
