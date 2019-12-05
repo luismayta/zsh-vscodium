@@ -1,11 +1,14 @@
 {
+  "extensions.autoUpdate": true,
+  "extensions.ignoreRecommendations": false,
+
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
   "editor.lineNumbers": "relative",
   "editor.rulers": [80, 120],
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.tabCompletion": true,
@@ -24,7 +27,9 @@
     ".mypy_cache": true,
     "htmlcov": true,
     "*.egg-info": true,
-    "*.pyc": true
+    "*.pyc": true,
+    "**/.git": true,
+    "**/.vscode": true
   },
   "files.watcherExclude": {
     "**/local/**": true
@@ -39,7 +44,7 @@
   },
   "vim.leader": ",",
   "vim.useSystemClipboard": true,
-  "vim.iskeyword": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
+  "vim.iskeyword": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
   "vim.statusBarColorControl": true,
   "vim.searchHighlightColor": "rgba(180, 142, 173, 1)",
   "vim.statusBarColors.insert": "#88c0d0",
@@ -55,6 +60,12 @@
   "vim.easymotionMarkerHeight": 24,
   "vim.easymotionMarkerBackgroundColor": "rgba(40, 40, 40, 0.5)",
   "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [";"],
+      "after": [":"]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "b"],
@@ -166,6 +177,16 @@
           "command": "editor.action.blockComment"
         }
       ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
     }
   ],
   "gitProjectManager.baseProjectsFolders": ["~/Projects"],
