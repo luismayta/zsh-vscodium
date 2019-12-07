@@ -8,8 +8,8 @@
   "editor.fontSize": 16,
   "editor.lineNumbers": "relative",
   "editor.rulers": [80, 120],
-  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
-  "editor.formatOnSave": true,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
+  "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
   "editor.tabCompletion": true,
   "editor.quickSuggestions": {
@@ -45,7 +45,7 @@
   "vim.leader": ",",
   "vim.autoindent": true,
   "vim.useSystemClipboard": true,
-  "vim.iskeyword": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "vim.iskeyword": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
   "vim.statusBarColorControl": true,
   "vim.searchHighlightColor": "rgba(180, 142, 173, 1)",
   "vim.statusBarColors.insert": "#88c0d0",
@@ -55,7 +55,8 @@
   "vim.statusBarColors.visualblock": "#a3be8c",
   "vim.statusBarColors.visualline": "#a3be8c",
   "vim.easymotionMarkerFontFamily": "Fira Code",
-  "vim.enableNeovim": true,
+  "vim.enableNeovim": false,
+  "vim.easymotion": true,
   "vim.easymotionMarkerFontSize": "16",
   "vim.easymotionMarkerYOffset": 12,
   "vim.easymotionMarkerHeight": 24,
@@ -105,6 +106,15 @@
         {
           "command": "workbench.action.toggleSidebarVisibility",
           "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "f", "e"],
+      "after": [],
+      "commands": [
+        {
+          "command": "extension.file-picker.openFileRelativeToOpenedFile"
         }
       ]
     },
@@ -217,7 +227,10 @@
   "workbench.activityBar.visible": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.colorCustomizations": {
-    "tab.unfocusedActiveBorder": "#fff0"
+    "tab.unfocusedActiveBorder": "#fff0",
+    "statusBar.debuggingBackground": "#2e3440",
+    "statusBar.noFolderBackground": "#2e3440",
+    "statusBar.background": "#2e3440"
   },
   "workbench.colorTheme": "Ariake Dark",
   "terminal.integrated.macOptionIsMeta": true,
@@ -249,5 +262,10 @@
   "zenMode.hideActivityBar": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": true,
-  "zenMode.hideTabs": false
+  "zenMode.hideTabs": false,
+  "kite.showWelcomeNotificationOnStartup": false,
+  "breadcrumbs.enabled": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
