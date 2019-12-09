@@ -75,6 +75,12 @@
   "vim.easymotionMarkerHeight": 24,
   "vim.easymotionMarkerBackgroundColor": "rgba(40, 40, 40, 0.5)",
   "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
   "vim.normalModeKeyBindings": [
     {
       "before": [";"],
@@ -82,6 +88,14 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["bookmarks.list"]
+    },
     {
       "before": ["z", "i"],
       "commands": [{ "command": "workbench.action.zoomIn" }]
@@ -91,6 +105,22 @@
       "commands": [
         { "command": "workbench.action.zoomOut" }
       ]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["Z", "Z"],
+      "commands": [":wq"]
     },
     {
       "before": ["<leader>", "b"],
@@ -215,6 +245,10 @@
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    },
+    {
       "before": ["?"],
       "commands": [
         { "command": "workbench.action.findInFiles" }
@@ -241,9 +275,9 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.colorCustomizations": {
     "tab.unfocusedActiveBorder": "#fff0",
-    "statusBar.debuggingBackground": "#2e3440",
-    "statusBar.noFolderBackground": "#2e3440",
-    "statusBar.background": "#2e3440"
+    "statusBar.debuggingBackground": "#a3be8c",
+    "statusBar.noFolderBackground": "#a3be8c",
+    "statusBar.background": "#a3be8c"
   },
   "workbench.colorTheme": "Ariake Dark",
   "terminal.integrated.macOptionIsMeta": true,
