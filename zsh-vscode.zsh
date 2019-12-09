@@ -128,6 +128,7 @@ function vscode::post_install {
         code_install yatki.vscode-surround
         code_install jacobdufault.fuzzy-search
         code_install wehrstedtcoding.file-picker
+        code_install unbug.codelf
 
         # TypeScript
         message_info "Installing required vscode packages for typescript"
@@ -152,6 +153,7 @@ function vscode::post_install {
         code_install dsznajder.es7-react-js-snippets
         code_install Nash.awesome-flutter-snippets
         code_install xabikos.JavaScriptSnippets
+
         # refactor
         code_install wix.glean
 
