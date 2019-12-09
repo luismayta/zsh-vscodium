@@ -94,6 +94,7 @@ function vscode::post_install {
         code_install silvenon.mdx
         code_install selbh.keyboard-scroll
         code_install oderwat.indent-rainbow
+        code_install alefragnani.bookmarks
 
         # buffers
         code_install serafeim.goto-previous-buffer
