@@ -17,9 +17,18 @@
     "comments": true,
     "strings": true
   },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.tslint": true
+  },
   "files.autoSave": "afterDelay",
   "files.associations": {
-    "*.py": "python"
+    "*.py": "python",
+    ".mocharc": "json",
+    "Dockerfile.*": "dockerfile",
+    "*bashrc": "shellscript",
+    "**/bash/**/*": "shellscript",
+    "tslint.json": "jsonc"
   },
   "files.exclude": {
     "*_pycache_*": true,
