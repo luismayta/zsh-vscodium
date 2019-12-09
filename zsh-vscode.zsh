@@ -93,6 +93,7 @@ function vscode::post_install {
         code_install Tyriar.sort-lines
         code_install silvenon.mdx
         code_install selbh.keyboard-scroll
+        code_install oderwat.indent-rainbow
 
         # buffers
         code_install serafeim.goto-previous-buffer
