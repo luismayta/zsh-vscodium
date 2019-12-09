@@ -59,7 +59,7 @@
   "vim.autoindent": true,
   "vim.useSystemClipboard": true,
   "vim.iskeyword": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
-  "vim.statusBarColorControl": true,
+  "vim.statusBarColorControl": false,
   "vim.searchHighlightColor": "rgba(180, 142, 173, 1)",
   "vim.statusBarColors.insert": "#88c0d0",
   "vim.statusBarColors.normal": "#2e3440",
@@ -69,7 +69,7 @@
   "vim.statusBarColors.visualline": "#a3be8c",
   "vim.easymotionMarkerFontFamily": "Fira Code",
   "vim.enableNeovim": false,
-  "vim.easymotion": true,
+  "vim.easymotion": false,
   "vim.easymotionMarkerFontSize": "16",
   "vim.easymotionMarkerYOffset": 12,
   "vim.easymotionMarkerHeight": 24,
@@ -90,11 +90,11 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "m"],
-      "commands": ["bookmarks.toggle"]
+      "commands": [{ "command": "bookmarks.toggle" }]
     },
     {
       "before": ["<leader>", "b"],
-      "commands": ["bookmarks.list"]
+      "commands": [{ "command": "bookmarks.list" }]
     },
     {
       "before": ["z", "i"],
@@ -105,10 +105,6 @@
       "commands": [
         { "command": "workbench.action.zoomOut" }
       ]
-    },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
     },
     {
       "before": ["leader", "w"],
@@ -169,10 +165,6 @@
           "command": "workbench.action.quickOpen"
         }
       ]
-    },
-    {
-      "before": ["<leader>", "s"],
-      "commands": ["workbench.action.files.save"]
     },
     {
       "before": ["<leader>", "c", "c"],
@@ -245,10 +237,6 @@
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["p"],
-      "after": ["p", "g", "v", "y"]
-    },
-    {
       "before": ["?"],
       "commands": [
         { "command": "workbench.action.findInFiles" }
@@ -275,9 +263,9 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.colorCustomizations": {
     "tab.unfocusedActiveBorder": "#fff0",
-    "statusBar.debuggingBackground": "#a3be8c",
-    "statusBar.noFolderBackground": "#a3be8c",
-    "statusBar.background": "#a3be8c"
+    "statusBar.debuggingBackground": "#2e3440",
+    "statusBar.noFolderBackground": "#2e3440",
+    "statusBar.background": "#2e3440"
   },
   "workbench.colorTheme": "Ariake Dark",
   "terminal.integrated.macOptionIsMeta": true,
@@ -314,5 +302,11 @@
   "breadcrumbs.enabled": false,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "gitProjectManager.displayProjectPath": true,
+  "importCost.bundleSizeDecoration": "gzipped",
+  "vim.cursorStylePerMode.insert": "underline",
+  "vim.replaceWithRegister": true,
+  "vim.scroll": 5,
+  "vim.vimrc.enable": false
 }
