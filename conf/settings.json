@@ -51,6 +51,10 @@
     "htmlcov": true,
     "*.egg-info": true
   },
+  "indentRainbow.ignoreErrorLanguages": [
+    "markdown",
+    "haskell"
+  ],
   "vim.leader": ",",
   "vim.autoindent": true,
   "vim.useSystemClipboard": true,
