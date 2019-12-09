@@ -91,10 +91,10 @@
   },
   {
     "key": "ctrl+x l",
-    "command": "workbench.action.navigateLeft"
+    "command": "workbench.action.navigateRight"
   },
   {
     "key": "ctrl+x h",
-    "command": "workbench.action.navigateRight"
+    "command": "workbench.action.navigateLeft"
   }
 ]
