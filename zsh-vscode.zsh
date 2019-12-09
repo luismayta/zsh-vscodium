@@ -89,7 +89,6 @@ function vscode::post_install {
         code_install Gruntfuggly.todo-tree
         code_install streetsidesoftware.code-spell-checker
         code_install bierner.markdown-preview-github-styles
-        code_install dbaeumer.vscode-eslint
         code_install eg2.vscode-npm-script
         code_install Tyriar.sort-lines
         code_install silvenon.mdx
@@ -107,6 +106,10 @@ function vscode::post_install {
         code_install jasonnutter.search-node-modules
         code_install erd0s.terraform-autocomplete
         code_install kiteco.kite
+
+        # linters
+        code_install ms-vscode.vscode-typescript-tslint-plugin
+        code_install dbaeumer.vscode-eslint
 
         # debug
         message_info "Installing required vscode packages for debug"
