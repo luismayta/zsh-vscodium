@@ -8,14 +8,7 @@
 #   Luis Mayta <slovacus@gmail.com>
 
 vscode_package_name="vscode"
-ZSH_VSCODE_PATH_ROOT=$(dirname "${0}":A)
 VSCODE_PATH_CODE_USER="${HOME}"/Library/Application\ Support/Code/User
-
-# shellcheck source=/dev/null
-source "${ZSH_VSCODE_PATH_ROOT}"/src/helpers/messages.zsh
-
-# shellcheck source=/dev/null
-source "${ZSH_VSCODE_PATH_ROOT}"/src/helpers/tools.zsh
 
 function code_install {
     code --install-extension "${1}" --force
