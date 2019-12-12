@@ -39,7 +39,8 @@ function rsync::install {
 if ! type -p rsync > /dev/null; then rsync::install; fi
 
 function vscode::init {
-    if [ ! -x "$(command which code)" ]; then
+
+    if ! type -p code > /dev/null; then
         message_error "Is Neccesary Installing required vscode packages"
     fi
 }
@@ -50,7 +51,8 @@ function vscode::sync {
 
 function vscode::post_install {
     vscode::load
-    if [ -x "$(command which code)" ]; then
+
+    if type -p code > /dev/null; then
         message_info "Installing required vscode packages"
         code_install aeschli.vscode-css-formatter
         code_install bierner.markdown-preview-github-styles
@@ -162,13 +164,13 @@ function vscode::post_install {
 }
 
 function vscode::load {
-    if [ -x "$(command which code)" ]; then
+    if type -p code > /dev/null; then
         vscode::init
     fi
 }
 
 vscode::load
 
-if [ ! -x "$(command which code)" ]; then
+if ! type -p code > /dev/null; then
     vscode::install
 fi
