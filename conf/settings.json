@@ -267,7 +267,7 @@
     "statusBar.noFolderBackground": "#2e3440",
     "statusBar.background": "#2e3440"
   },
-  "workbench.colorTheme": "Ariake Dark",
+  "workbench.colorTheme": "Nord",
   "terminal.integrated.macOptionIsMeta": true,
   "markdown.preview.fontSize": 16,
   "path-intellisense.autoSlashAfterDirectory": true,
@@ -285,7 +285,9 @@
     "type": "none"
   },
   "explorer.confirmDelete": false,
+  "python.pipenvPath": "~/.pyenv/shims/pipenv",
   "python.venvPath": "~/.local/share/virtualenvs/",
+  "python.formatting.provider": "~/.pyenv/shims/black",
   "python.linting.mypyEnabled": true,
   "python.linting.pycodestyleEnabled": true,
   "python.jediEnabled": false,
