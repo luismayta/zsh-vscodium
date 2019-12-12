@@ -84,7 +84,6 @@ function vscode::post_install {
         code_install WakaTime.vscode-wakatime
         code_install aeschli.vscode-css-formatter
         code_install mgmcdermott.vscode-language-babel
-        code_install mgmcdermott.vscode-language-babel
         code_install formulahendry.auto-rename-tag
         code_install Gruntfuggly.todo-tree
         code_install streetsidesoftware.code-spell-checker
@@ -108,6 +107,7 @@ function vscode::post_install {
         code_install jasonnutter.search-node-modules
         code_install erd0s.terraform-autocomplete
         code_install kiteco.kite
+        code_install mrmlnc.vscode-scs
 
         # linters
         code_install ms-vscode.vscode-typescript-tslint-plugin
@@ -138,10 +138,10 @@ function vscode::post_install {
         code_install steoates.autoimport
         code_install dotup.dotup-vscode-interface-generator
 
-
         # theme
         message_info "Installing required vscode packages for Theme"
         code_install vscode-icons-team.vscode-icons
+        code_install arcticicestudio.nord-visual-studio-code
 
         # vim
         message_info "Installing required vscode packages for vim"
