@@ -70,9 +70,13 @@ function vscode::post_install {
         message_info "Installing required vscode packages for git"
         code_install felipecaputo.git-project-manager
 
+        # appareance
+        code_install sirtori.indenticator
+        code_install coenraads.bracket-pair-colorizer-2
+        code_install oderwat.indent-rainbow
+
         # tools
         message_info "Installing required vscode packages for tools"
-        code_install coenraads.bracket-pair-colorizer-2
         code_install hookyqr.beautify
         code_install mikestead.dotenv
         code_install timonwong.shellcheck
@@ -81,13 +85,11 @@ function vscode::post_install {
         code_install mgmcdermott.vscode-language-babel
         code_install formulahendry.auto-rename-tag
         code_install Gruntfuggly.todo-tree
-        code_install streetsidesoftware.code-spell-checker
         code_install bierner.markdown-preview-github-styles
         code_install eg2.vscode-npm-script
         code_install Tyriar.sort-lines
         code_install silvenon.mdx
         code_install selbh.keyboard-scroll
-        code_install oderwat.indent-rainbow
         code_install alefragnani.bookmarks
 
         # buffers
@@ -107,6 +109,7 @@ function vscode::post_install {
         # linters
         code_install ms-vscode.vscode-typescript-tslint-plugin
         code_install dbaeumer.vscode-eslint
+        code_install streetsidesoftware.code-spell-checker
 
         # debug
         message_info "Installing required vscode packages for debug"
