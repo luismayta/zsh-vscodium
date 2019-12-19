@@ -72,8 +72,8 @@ function vscode::post_install {
 
         # tools
         message_info "Installing required vscode packages for tools"
+        code_install coenraads.bracket-pair-colorizer-2
         code_install hookyqr.beautify
-        code_install CoenraadS.bracket-pair-colorizer
         code_install mikestead.dotenv
         code_install timonwong.shellcheck
         code_install WakaTime.vscode-wakatime
