@@ -8,11 +8,29 @@
 #   Luis Mayta <slovacus@gmail.com>
 
 vscode_package_name="vscode"
-VSCODE_PATH_CODE_USER="${HOME}"/Library/Application\ Support/Code/User
 ZSH_VSCODE_PATH_ROOT=$(dirname "$0")
 
 function code_install {
     code --install-extension "${1}" --force
+}
+
+function vscode::path::linux {
+    echo "${HOME}"/.config/Code/User
+}
+
+function vscode::path::osx {
+    echo "${HOME}"/Library/Application\ Support/Code/User
+}
+
+function vscode::path::factory {
+    case "${OSTYPE}" in
+    darwin*)
+        vscode::path::osx
+        ;;
+    linux*)
+        vscode::path::linux
+      ;;
+    esac
 }
 
 function vscode::install {
@@ -40,7 +58,9 @@ function vscode::init {
 }
 
 function vscode::sync {
-    rsync -avzh --progress "${ZSH_VSCODE_PATH_ROOT}/conf/" "${VSCODE_PATH_CODE_USER}/"
+    local vscode_path_conf_user
+    vscode_path_conf_user="$(vscode::path::factory)"
+    rsync -avzh --progress "${ZSH_VSCODE_PATH_ROOT}/conf/" "${vscode_path_conf_user}/"
 }
 
 function vscode::post_install {
