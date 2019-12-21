@@ -12,7 +12,7 @@ VSCODE_PATH_CODE_USER="${HOME}"/Library/Application\ Support/Code/User
 ZSH_VSCODE_PATH_ROOT=$(dirname "$0")
 
 function code_install {
-    code --install-extension "${0}" --force
+    code --install-extension "${1}" --force
 }
 
 function vscode::install {
