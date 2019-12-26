@@ -1,17 +1,17 @@
 {
   "cSpell.userWords": [
-    "Injectable",
-    "Shorttrack",
     "aliexpress",
     "daemonset",
     "fastify",
     "goud",
+    "Injectable",
     "kubeadm",
     "kubernetes",
     "nestjs",
     "nrwl",
     "numpy",
-    "pytest"
+    "pytest",
+    "Shorttrack"
   ],
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
@@ -65,8 +65,8 @@
     "*.egg-info": true
   },
   "indentRainbow.ignoreErrorLanguages": [
-    "markdown",
-    "haskell"
+    "haskell",
+    "markdown"
   ],
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -342,7 +342,7 @@
     "NOTE"
   ],
   "terminal.integrated.fontFamily": "Fira Code",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 17,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
   "window.zoomLevel": 0,
