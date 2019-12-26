@@ -1,11 +1,24 @@
 {
+  "cSpell.userWords": [
+    "Injectable",
+    "Shorttrack",
+    "aliexpress",
+    "daemonset",
+    "fastify",
+    "goud",
+    "kubeadm",
+    "kubernetes",
+    "nestjs",
+    "nrwl",
+    "numpy",
+    "pytest"
+  ],
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
-
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 16,
+  "editor.fontSize": 17,
   "editor.lineNumbers": "relative",
   "editor.rulers": [80, 120],
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
@@ -55,9 +68,32 @@
     "markdown",
     "haskell"
   ],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "vim.leader": ",",
   "vim.autoindent": true,
   "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": true,
+    "<C-b>": true,
+    "<C-j>": false,
+    "<C-k>": false,
+    "<J>": false,
+    "<K>": false,
+    "<H>": false
+  },
   "vim.iskeyword": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
   "vim.statusBarColorControl": false,
   "vim.searchHighlightColor": "rgba(180, 142, 173, 1)",
@@ -75,6 +111,10 @@
   "vim.easymotionMarkerHeight": 24,
   "vim.easymotionMarkerBackgroundColor": "rgba(40, 40, 40, 0.5)",
   "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.cursorStylePerMode.insert": "underline",
+  "vim.replaceWithRegister": true,
+  "vim.scroll": 5,
+  "vim.vimrc.enable": false,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
@@ -253,6 +293,54 @@
   ],
   "gitProjectManager.baseProjectsFolders": ["~/Projects"],
   "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "todo-tree.defaultHighlight": {
+    "type": "tag",
+    "background": "#fcf3b3",
+    "opacity": 50
+  },
+  "todo-tree.tags": ["TODO", "FIXME", "QUESTION", "NOTE"],
+  "todo-tree.customHighlight": {
+    "TODO": {
+      "type": "tag",
+      "foreground": "red"
+    },
+    "FIXME": {
+      "type": "tag",
+      "foreground": "#ff00f2"
+    },
+    "QUESTION": {
+      "type": "tag",
+      "foreground": "#00f2ff"
+    },
+    "NOTE": {
+      "type": "tag-and-comment",
+      "foreground": "#00ff44"
+    }
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "type": "tag",
+      "foreground": "red"
+    },
+    "FIXME": {
+      "type": "tag",
+      "foreground": "#ff00f2"
+    },
+    "QUESTION": {
+      "type": "tag",
+      "foreground": "#00f2ff"
+    },
+    "NOTE": {
+      "type": "tag-and-comment",
+      "foreground": "#00ff44"
+    }
+  },
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "QUESTION",
+    "NOTE"
+  ],
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.copyOnSelection": true,
@@ -267,7 +355,7 @@
     "statusBar.noFolderBackground": "#2e3440",
     "statusBar.background": "#2e3440"
   },
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "One Dark Pro",
   "terminal.integrated.macOptionIsMeta": true,
   "markdown.preview.fontSize": 16,
   "path-intellisense.autoSlashAfterDirectory": true,
@@ -276,14 +364,6 @@
   "window.restoreFullscreen": true,
   "go.autocompleteUnimportedPackages": true,
   "prettier.arrowParens": "always",
-  "todo-tree.highlights.customHighlight": {
-    "TODO": {},
-    "FIXME": {}
-  },
-  "todo-tree.highlights.defaultHighlight": {
-    "foreground": "green",
-    "type": "none"
-  },
   "explorer.confirmDelete": false,
   "python.pipenvPath": "~/.pyenv/shims/pipenv",
   "python.venvPath": "~/.local/share/virtualenvs/",
@@ -291,9 +371,6 @@
   "python.linting.mypyEnabled": true,
   "python.linting.pycodestyleEnabled": true,
   "python.jediEnabled": false,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "zenMode.hideStatusBar": false,
   "zenMode.centerLayout": false,
   "zenMode.hideActivityBar": false,
@@ -302,13 +379,6 @@
   "zenMode.hideTabs": false,
   "kite.showWelcomeNotificationOnStartup": false,
   "breadcrumbs.enabled": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "gitProjectManager.displayProjectPath": true,
-  "importCost.bundleSizeDecoration": "gzipped",
-  "vim.cursorStylePerMode.insert": "underline",
-  "vim.replaceWithRegister": true,
-  "vim.scroll": 5,
-  "vim.vimrc.enable": false
+  "importCost.bundleSizeDecoration": "gzipped"
 }
