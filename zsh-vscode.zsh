@@ -29,7 +29,7 @@ function vscode::path::factory {
         ;;
     linux*)
         vscode::path::linux
-      ;;
+    ;;
     esac
 }
 
@@ -51,7 +51,6 @@ function rsync::install {
 if ! type -p rsync > /dev/null; then rsync::install; fi
 
 function vscode::init {
-
     if ! type -p code > /dev/null; then
         message_error "Is Neccesary Installing required vscode packages"
     fi
@@ -73,8 +72,10 @@ function vscode::post_install {
         code_install EditorConfig.EditorConfig
         code_install gornivv.vscode-flutter-files
         code_install ms-azuretools.vscode-docker
-        code_install wix.vscode-import-cost
         code_install aaron-bond.better-comments
+
+        # tasks
+        code_install Gruntfuggly.todo-tree
 
         # languages
         message_info "Installing required vscode packages for languages"
@@ -105,7 +106,6 @@ function vscode::post_install {
         code_install aeschli.vscode-css-formatter
         code_install mgmcdermott.vscode-language-babel
         code_install formulahendry.auto-rename-tag
-        code_install Gruntfuggly.todo-tree
         code_install bierner.markdown-preview-github-styles
         code_install eg2.vscode-npm-script
         code_install Tyriar.sort-lines
@@ -153,7 +153,6 @@ function vscode::post_install {
         # TypeScript
         message_info "Installing required vscode packages for typescript"
         code_install pmneo.tsimporter
-        code_install rbbit.typescript-hero
         code_install steoates.autoimport
         code_install dotup.dotup-vscode-interface-generator
 
@@ -161,6 +160,7 @@ function vscode::post_install {
         message_info "Installing required vscode packages for Theme"
         code_install vscode-icons-team.vscode-icons
         code_install arcticicestudio.nord-visual-studio-code
+        code_install zhuangtongfa.material-theme
 
         # vim
         message_info "Installing required vscode packages for vim"
@@ -173,6 +173,7 @@ function vscode::post_install {
         code_install dsznajder.es7-react-js-snippets
         code_install Nash.awesome-flutter-snippets
         code_install xabikos.JavaScriptSnippets
+        code_install infeng.vscode-react-typescript
 
         # refactor
         code_install wix.glean
