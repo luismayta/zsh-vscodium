@@ -112,6 +112,7 @@ function vscode::post_install {
         code_install silvenon.mdx
         code_install selbh.keyboard-scroll
         code_install alefragnani.bookmarks
+        code_install jebbs.plantuml
 
         # buffers
         code_install serafeim.goto-previous-buffer
