@@ -1,0 +1,15 @@
+{
+  "If Main": {
+    "prefix": "ifmain",
+    "body": ["if __name__ == '__main__':", "    $0"],
+    "description": "If __main__ statement"
+  },
+  "Import numpy": {
+    "prefix": "impnp",
+    "body": ["import numpy as np", "$0"]
+  },
+  "Import matplotlib": {
+    "prefix": "impplt",
+    "body": ["import matplotlib.pyplot as plt", "$0"]
+  }
+}
