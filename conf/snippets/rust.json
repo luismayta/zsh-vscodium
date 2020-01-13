@@ -1,0 +1,11 @@
+{
+  "stdin": {
+    "prefix": "stdin",
+    "body": [
+      "let mut ${1:s} = String::new();",
+      "std::io::stdin().read_line(&mut $1).ok();",
+      "$1 = $1.trim().parse().unwrap();"
+    ],
+    "description": "Read from stdin"
+  }
+}
