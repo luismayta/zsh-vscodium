@@ -83,7 +83,7 @@ function vscode::post_install {
         code_install ms-vscode.Go
         code_install trixnz.vscode-lua
         code_install Dart-Code.dart-code
-        code_install mauve.terraform
+        code_install 4ops.terraform
         code_install Dart-Code.flutter
 
         code_install kumar-harsh.graphql-for-vscode
@@ -124,7 +124,6 @@ function vscode::post_install {
         code_install christian-kohler.npm-intellisense
         code_install leizongmin.node-module-intellisense
         code_install jasonnutter.search-node-modules
-        code_install erd0s.terraform-autocomplete
         code_install kiteco.kite
         code_install mrmlnc.vscode-scs
 
