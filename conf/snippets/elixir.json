@@ -1,0 +1,12 @@
+{
+  "def snippet": {
+    "prefix": "deff",
+    "body": ["def $1 do", "\t$2", "end"],
+    "description": "def snippet"
+  },
+  "IO.puts": {
+    "prefix": "cw",
+    "body": ["IO.puts($1)"],
+    "description": "IO.puts"
+  }
+}
