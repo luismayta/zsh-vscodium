@@ -1,0 +1,89 @@
+{
+  "Println to console": {
+    "prefix": "pl",
+    "body": ["println($1)"],
+    "description": "Output to console"
+  },
+  "FMT Println to console": {
+    "prefix": "fpl",
+    "body": ["fmt.Println($1)"],
+    "description": "FMT Output to console"
+  },
+  "fmt println to console": {
+    "prefix": "cw",
+    "body": ["fmt.Println($1)"],
+    "description": "fmt output to console"
+  },
+  "Log Println to console": {
+    "prefix": "lpl",
+    "body": ["log.Println($1)"],
+    "description": "Log Println to console"
+  },
+  "FMT Sprintf string": {
+    "prefix": "fs",
+    "body": ["fmt.Sprintf(\"$1\")"],
+    "description": "FMT Sprintf string"
+  },
+  "FMT Printf string": {
+    "prefix": "fpf",
+    "body": ["fmt.Printf(\"$1\")"],
+    "description": "FMT Printf string"
+  },
+  "type struct{}": {
+    "prefix": "ts",
+    "body": ["type $1 struct"],
+    "description": "type struct{}"
+  },
+  "type interface{}": {
+    "prefix": "ti",
+    "body": ["type $1 interface"],
+    "description": "type interface{}"
+  },
+  "ResponseWriter Request HandlerFunc": {
+    "prefix": "wrn",
+    "body": [
+      "w http.ResponseWriter, r *http.Request, next http.HandlerFunc"
+    ],
+    "description": "ResponseWriter Request HandlerFunc"
+  },
+  "ResponseWriter Request": {
+    "prefix": "wr",
+    "body": ["w http.ResponseWriter, r *http.Request"],
+    "description": "ResponseWriter Request"
+  },
+  "func named": {
+    "prefix": "fn",
+    "body": ["func ${1:main}($2) {", "\t$3", "}"]
+  },
+  "package and func main": {
+    "prefix": "main",
+    "body": ["package main\n", "func main() {", "\t$1", "}"]
+  },
+  "func test": {
+    "prefix": "fnt",
+    "body": ["func Test$1(t *testing.T) {", "\t$2", "}"]
+  },
+  "return": {
+    "prefix": "r",
+    "body": ["return"]
+  },
+  "fmt.Errorf": {
+    "prefix": "fe",
+    "body": ["fmt.Errorf(\"$1\")"]
+  },
+  "struct method": {
+    "prefix": "fnm",
+    "body": ["func ($1) $2($3) {", "\t$4", "}"],
+    "description": "struct method"
+  },
+  "func": {
+    "prefix": "ll",
+    "body": ["func($1) {", "\t$2", "}"],
+    "description": "func"
+  },
+  "package main": {
+    "prefix": "pm",
+    "body": ["package main\n"],
+    "description": "package main"
+  }
+}
