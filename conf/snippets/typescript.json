@@ -17,5 +17,79 @@
       "})"
     ],
     "description": "Returns new Promise"
+  },
+  "Print to console": {
+    "prefix": "cw",
+    "body": ["console.log($1);"],
+    "description": "Log output to console"
+  },
+  "const": {
+    "prefix": "c",
+    "body": ["const "]
+  },
+  "iife": {
+    "prefix": "iife",
+    "body": [
+      "(function () {",
+      "\t'use strict';\n",
+      "\t$1",
+      "}());"
+    ],
+    "description": "Immediately-invoked function expression"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": ["function ($1) {", "\t$2", "}"],
+    "description": "no named function"
+  },
+  "named function": {
+    "prefix": "func",
+    "body": ["function $1($2) {", "\t$3", "}"],
+    "description": "named function"
+  },
+  "return": {
+    "prefix": "r",
+    "body": ["return"],
+    "description": "return"
+  },
+  "module.exports": {
+    "prefix": "me",
+    "body": ["module.exports = $0"],
+    "description": "module.exports"
+  },
+  "use strict": {
+    "prefix": "us",
+    "body": ["'use strict';\n"],
+    "description": "use strict"
+  },
+  "lambda": {
+    "prefix": "ll",
+    "body": ["($1) => {$2}"],
+    "description": "lambda"
+  },
+  "lambda req res": {
+    "prefix": "lr",
+    "body": ["(req, res) => {$2}"],
+    "description": "lambda req res"
+  },
+  "lambda req res next": {
+    "prefix": "lrn",
+    "body": ["(req, res, next) => {$2}"],
+    "description": "lambda req res nex"
+  },
+  "export default": {
+    "prefix": "ed",
+    "body": ["export default $1"],
+    "description": "export default"
+  },
+  "export class": {
+    "prefix": "ec",
+    "body": ["export class $1"],
+    "description": "export class"
+  },
+  "class constructor": {
+    "prefix": "ctor",
+    "body": ["constructor($1) {\n\t$0\n}"],
+    "description": "class constructor"
   }
 }
