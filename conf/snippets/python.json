@@ -11,5 +11,85 @@
   "Import matplotlib": {
     "prefix": "impplt",
     "body": ["import matplotlib.pyplot as plt", "$0"]
+  },
+  "Print to console": {
+    "prefix": "p",
+    "body": ["print($1)"],
+    "description": "Log output to console"
+  },
+  "Print to console alias": {
+    "prefix": "cw",
+    "body": ["print($1)"],
+    "description": "Log output to console alias"
+  },
+  "from import": {
+    "prefix": "ii",
+    "body": ["from $1 import $1"],
+    "description": "from import"
+  },
+  "from import one": {
+    "prefix": "im",
+    "body": ["from $1 import $2"],
+    "description": "from import one"
+  },
+  "def function": {
+    "prefix": "deff",
+    "body": ["def ${1:function}($2):", "\t${3:pass}"],
+    "description": "def function"
+  },
+  "def function method": {
+    "prefix": "defs",
+    "body": ["def ${1:__init__}(self$2):", "\t${3:pass}"],
+    "description": "def function method"
+  },
+  "def function with request": {
+    "prefix": "defr",
+    "body": [
+      "def ${1:function}(request$2):",
+      "\t${3:pass}"
+    ],
+    "description": "def function with request"
+  },
+  "class object": {
+    "prefix": "cc",
+    "body": ["class ${1:Name}:", "\t${2:pass}"],
+    "description": "class object"
+  },
+  "class model": {
+    "prefix": "cm",
+    "body": [
+      "class ${1:Name}(${2:models.Model}):",
+      "\t${3:pass}"
+    ],
+    "description": "class model"
+  },
+  "class form": {
+    "prefix": "cf",
+    "body": [
+      "class ${1:Name}Form(forms.${2:ModelForm}):",
+      "\t${3:pass}"
+    ],
+    "description": "class form"
+  },
+  "return": {
+    "prefix": "r",
+    "body": ["return"],
+    "description": "return"
+  },
+  "request": {
+    "prefix": "req",
+    "body": ["request"]
+  },
+  "response": {
+    "prefix": "res",
+    "body": ["response"]
+  },
+  "benv": {
+    "prefix": "benv",
+    "body": ["#!/usr/local/bin/python3.6"]
+  },
+  "main": {
+    "prefix": "main",
+    "body": ["if __name__ == '__main__':", "\t${1:pass}"]
   }
 }
