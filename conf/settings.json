@@ -319,30 +319,6 @@
   ],
   "gitProjectManager.baseProjectsFolders": ["~/Projects"],
   "gitProjectManager.storeRepositoriesBetweenSessions": true,
-  "todo-tree.defaultHighlight": {
-    "type": "tag",
-    "background": "#fcf3b3",
-    "opacity": 50
-  },
-  "todo-tree.tags": ["TODO", "FIXME", "QUESTION", "NOTE"],
-  "todo-tree.customHighlight": {
-    "TODO": {
-      "type": "tag",
-      "foreground": "red"
-    },
-    "FIXME": {
-      "type": "tag",
-      "foreground": "#ff00f2"
-    },
-    "QUESTION": {
-      "type": "tag",
-      "foreground": "#00f2ff"
-    },
-    "NOTE": {
-      "type": "tag-and-comment",
-      "foreground": "#00ff44"
-    }
-  },
   "todo-tree.highlights.customHighlight": {
     "TODO": {
       "type": "tag",
@@ -381,23 +357,6 @@
     "statusBar.noFolderBackground": "#2e3440",
     "statusBar.background": "#2e3440"
   },
-  "todo.file.exclude": [
-    "**/.!(todo|todos|task|tasks)/**",
-    "**/_output/**",
-    "**/bower_components/**",
-    "**/build/**",
-    "**/dist/**",
-    "**/node_modules/**",
-    "**/out/**",
-    "**/output/**",
-    "**/release/**",
-    "**/releases/**",
-    "**/static/**",
-    "**/target/**",
-    "**/third_party/**",
-    "**/vendor/**",
-    "**/.venv/**"
-  ],
   "workbench.colorTheme": "One Dark Pro",
   "terminal.integrated.macOptionIsMeta": true,
   "markdown.preview.fontSize": 16,
@@ -413,7 +372,7 @@
   "explorer.confirmDelete": false,
   "python.pipenvPath": "~/.pyenv/shims/pipenv",
   "python.venvPath": "~/.local/share/virtualenvs/",
-  "python.formatting.provider": "~/.pyenv/shims/black",
+  "python.formatting.provider": "black",
   "python.linting.mypyEnabled": true,
   "python.linting.pycodestyleEnabled": true,
   "python.jediEnabled": false,
@@ -426,5 +385,9 @@
   "kite.showWelcomeNotificationOnStartup": false,
   "breadcrumbs.enabled": false,
   "gitProjectManager.displayProjectPath": true,
-  "importCost.bundleSizeDecoration": "gzipped"
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "tag",
+    "background": "#fcf3b3",
+    "opacity": 50
+  }
 }
