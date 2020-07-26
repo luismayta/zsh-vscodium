@@ -91,7 +91,7 @@ ZSH_VSCODE_PACKAGES=(
         # theme
         vscode-icons-team.vscode-icons
         arcticicestudio.nord-visual-studio-code
-        zhuangtongfa.material-theme
+        nutstick.challenger-deep-monokai
 
         # vim
         vscodevim.vim
