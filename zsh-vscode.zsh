@@ -42,7 +42,7 @@ function vscode::install {
 function rsync::install {
     message_info "Installing rsync for ${vscode_package_name}"
     if ! type -p brew > /dev/null; then
-        message_error "it's neccesary brew, add: luismayta/zsh-brew"
+        message_warning "it's neccesary brew, add: luismayta/zsh-brew"
     fi
     brew install rsync
     message_success "Installed rsync ${vscode_package_name}"
@@ -52,7 +52,7 @@ if ! type -p rsync > /dev/null; then rsync::install; fi
 
 function vscode::init {
     if ! type -p code > /dev/null; then
-        message_error "Is Neccesary Installing required vscode packages"
+        message_warning "Is Neccesary Installing required vscode packages"
     fi
 }
 
