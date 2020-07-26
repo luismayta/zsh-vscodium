@@ -9,8 +9,106 @@
 
 vscode_package_name="vscode"
 ZSH_VSCODE_PATH_ROOT=$(dirname "$0")
+ZSH_VSCODE_PACKAGES=(
+        aeschli.vscode-css-formatter
+        bierner.markdown-preview-github-styles
+        EditorConfig.EditorConfig
+        ms-azuretools.vscode-docker
+        aaron-bond.better-comments
 
-function code_install {
+        # tasks
+        Gruntfuggly.todo-tree
+
+        # languages
+        ms-python.python
+        trixnz.vscode-lua
+        Dart-Code.dart-code
+        4ops.terraform
+        Dart-Code.flutter
+        kumar-harsh.graphql-for-vscode
+        gornivv.vscode-flutter-files
+
+        # git
+        felipecaputo.git-project-manager
+
+        # appareance
+        sirtori.indenticator
+        coenraads.bracket-pair-colorizer-2
+        oderwat.indent-rainbow
+
+        # tools
+        hookyqr.beautify
+        mikestead.dotenv
+        timonwong.shellcheck
+        WakaTime.vscode-wakatime
+        aeschli.vscode-css-formatter
+        mgmcdermott.vscode-language-babel
+        formulahendry.auto-rename-tag
+        bierner.markdown-preview-github-styles
+        Tyriar.sort-lines
+        silvenon.mdx
+        selbh.keyboard-scroll
+        alefragnani.bookmarks
+        jebbs.plantuml
+
+        # buffers
+        serafeim.goto-previous-buffer
+        will-wow.vscode-open-buffers
+
+        # intellisense
+        christian-kohler.path-intellisense
+        christian-kohler.npm-intellisense
+        leizongmin.node-module-intellisense
+        jasonnutter.search-node-modules
+        # kiteco.kite
+        mrmlnc.vscode-scss
+
+        # linters
+        ms-vscode.vscode-typescript-tslint-plugin
+        dbaeumer.vscode-eslint
+        streetsidesoftware.code-spell-checker
+
+        # debug
+        msjsdiag.debugger-for-chrome
+
+        # React
+        jawandarajbir.react-vscode-extension-pack
+        jingkaizhao.vscode-redux-devtools
+        xabikos.ReactSnippets
+
+        # Tools
+        esbenp.prettier-vscode
+        yatki.vscode-surround
+        jacobdufault.fuzzy-search
+        wehrstedtcoding.file-picker
+        unbug.codelf
+
+        # TypeScript
+        pmneo.tsimporter
+        steoates.autoimport
+        dotup.dotup-vscode-interface-generator
+
+        # theme
+        vscode-icons-team.vscode-icons
+        arcticicestudio.nord-visual-studio-code
+        zhuangtongfa.material-theme
+
+        # vim
+        vscodevim.vim
+
+        # snippets
+        alexisvt.flutter-snippets
+        dsznajder.es7-react-js-snippets
+        Nash.awesome-flutter-snippets
+        xabikos.JavaScriptSnippets
+        infeng.vscode-react-typescript
+
+        # refactor
+        wix.glean
+)
+
+
+function code::install {
     code --install-extension "${1}" --force
 }
 
@@ -35,6 +133,10 @@ function vscode::path::factory {
 
 function vscode::install {
     message_info "Installing vscode"
+    if ! type -p brew > /dev/null; then
+        message_warning "it's neccesary brew, add: luismayta/zsh-brew"
+        return
+    fi
     brew cask install visual-studio-code
     message_success "Installed vscode"
 }
@@ -65,120 +167,15 @@ function vscode::sync {
 function vscode::post_install {
     vscode::load
 
-    if type -p code > /dev/null; then
-        message_info "Installing required vscode packages"
-        code_install aeschli.vscode-css-formatter
-        code_install bierner.markdown-preview-github-styles
-        code_install EditorConfig.EditorConfig
-        code_install gornivv.vscode-flutter-files
-        code_install ms-azuretools.vscode-docker
-        code_install aaron-bond.better-comments
-
-        # tasks
-        code_install Gruntfuggly.todo-tree
-
-        # languages
-        message_info "Installing required vscode packages for languages"
-        code_install ms-python.python
-        code_install ms-vscode.Go
-        code_install trixnz.vscode-lua
-        code_install Dart-Code.dart-code
-        code_install 4ops.terraform
-        code_install Dart-Code.flutter
-
-        code_install kumar-harsh.graphql-for-vscode
-
-        # git
-        message_info "Installing required vscode packages for git"
-        code_install felipecaputo.git-project-manager
-
-        # appareance
-        code_install sirtori.indenticator
-        code_install coenraads.bracket-pair-colorizer-2
-        code_install oderwat.indent-rainbow
-
-        # tools
-        message_info "Installing required vscode packages for tools"
-        code_install hookyqr.beautify
-        code_install mikestead.dotenv
-        code_install timonwong.shellcheck
-        code_install WakaTime.vscode-wakatime
-        code_install aeschli.vscode-css-formatter
-        code_install mgmcdermott.vscode-language-babel
-        code_install formulahendry.auto-rename-tag
-        code_install bierner.markdown-preview-github-styles
-        code_install eg2.vscode-npm-script
-        code_install Tyriar.sort-lines
-        code_install silvenon.mdx
-        code_install selbh.keyboard-scroll
-        code_install alefragnani.bookmarks
-        code_install jebbs.plantuml
-
-        # buffers
-        code_install serafeim.goto-previous-buffer
-        code_install will-wow.vscode-open-buffers
-
-        # intellisense
-        message_info "Installing required vscode packages for intellisense"
-        code_install christian-kohler.path-intellisense
-        code_install christian-kohler.npm-intellisense
-        code_install leizongmin.node-module-intellisense
-        code_install jasonnutter.search-node-modules
-        code_install kiteco.kite
-        code_install mrmlnc.vscode-scs
-
-        # linters
-        code_install ms-vscode.vscode-typescript-tslint-plugin
-        code_install dbaeumer.vscode-eslint
-        code_install streetsidesoftware.code-spell-checker
-
-        # debug
-        message_info "Installing required vscode packages for debug"
-        code_install msjsdiag.debugger-for-chrome
-
-        # React
-        message_info "Installing required vscode packages for react"
-        code_install jawandarajbir.react-vscode-extension-pack
-        code_install jingkaizhao.vscode-redux-devtools
-        code_install xabikos.ReactSnippets
-
-        # Tools
-        message_info "Installing required vscode packages for tool"
-        code_install esbenp.prettier-vscode
-        code_install yatki.vscode-surround
-        code_install jacobdufault.fuzzy-search
-        code_install wehrstedtcoding.file-picker
-        code_install unbug.codelf
-
-        # TypeScript
-        message_info "Installing required vscode packages for typescript"
-        code_install pmneo.tsimporter
-        code_install steoates.autoimport
-        code_install dotup.dotup-vscode-interface-generator
-
-        # theme
-        message_info "Installing required vscode packages for Theme"
-        code_install vscode-icons-team.vscode-icons
-        code_install arcticicestudio.nord-visual-studio-code
-        code_install zhuangtongfa.material-theme
-
-        # vim
-        message_info "Installing required vscode packages for vim"
-
-        code_install vscodevim.vim
-
-        # snippets
-        message_info "Installing required vscode packages for snippets"
-        code_install alexisvt.flutter-snippets
-        code_install dsznajder.es7-react-js-snippets
-        code_install Nash.awesome-flutter-snippets
-        code_install xabikos.JavaScriptSnippets
-        code_install infeng.vscode-react-typescript
-
-        # refactor
-        code_install wix.glean
-
+    if ! type -p code > /dev/null; then
+        message_warning "it's neccesary have vscode"
+        return
     fi
+
+    for package in "${ZSH_VSCODE_PACKAGES[@]}"; do
+        code::install "${package}"
+    done
+
 }
 
 function vscode::load {
