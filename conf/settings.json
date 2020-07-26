@@ -81,10 +81,7 @@
     "*.egg-info": true,
     ".venv": true
   },
-  "indentRainbow.ignoreErrorLanguages": [
-    "haskell",
-    "markdown"
-  ],
+  "indentRainbow.ignoreErrorLanguages": ["haskell", "markdown"],
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -168,9 +165,7 @@
     },
     {
       "before": ["z", "o"],
-      "commands": [
-        { "command": "workbench.action.zoomOut" }
-      ]
+      "commands": [{ "command": "workbench.action.zoomOut" }]
     },
     {
       "before": ["leader", "w"],
@@ -304,9 +299,7 @@
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["?"],
-      "commands": [
-        { "command": "workbench.action.findInFiles" }
-      ]
+      "commands": [{ "command": "workbench.action.findInFiles" }]
     },
     {
       "before": [">"],
@@ -337,12 +330,7 @@
       "foreground": "#00ff44"
     }
   },
-  "todo-tree.general.tags": [
-    "TODO",
-    "FIXME",
-    "QUESTION",
-    "NOTE"
-  ],
+  "todo-tree.general.tags": ["TODO", "FIXME", "QUESTION", "NOTE"],
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.copyOnSelection": true,
@@ -357,7 +345,7 @@
     "statusBar.noFolderBackground": "#2e3440",
     "statusBar.background": "#2e3440"
   },
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Monokai Challenger Deep",
   "terminal.integrated.macOptionIsMeta": true,
   "markdown.preview.fontSize": 16,
   "path-intellisense.autoSlashAfterDirectory": true,
@@ -389,5 +377,9 @@
     "type": "tag",
     "background": "#fcf3b3",
     "opacity": 50
-  }
+  },
+  "todo-tree.tree.showScanModeButton": false,
+  "editor.accessibilitySupport": "on",
+  "workbench.preferredDarkColorTheme": "Monokai Challenger Deep",
+  "zenMode.hideActivityBar": false
 }
