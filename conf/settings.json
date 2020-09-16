@@ -345,7 +345,6 @@
     "statusBar.noFolderBackground": "#2e3440",
     "statusBar.background": "#2e3440"
   },
-  "workbench.colorTheme": "Monokai Challenger Deep",
   "terminal.integrated.macOptionIsMeta": true,
   "markdown.preview.fontSize": 16,
   "path-intellisense.autoSlashAfterDirectory": true,
@@ -381,5 +380,15 @@
   "todo-tree.tree.showScanModeButton": false,
   "editor.accessibilitySupport": "on",
   "workbench.preferredDarkColorTheme": "Monokai Challenger Deep",
-  "zenMode.hideActivityBar": false
+  "zenMode.hideActivityBar": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  }
 }
