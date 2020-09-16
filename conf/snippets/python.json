@@ -44,10 +44,7 @@
   },
   "def function with request": {
     "prefix": "defr",
-    "body": [
-      "def ${1:function}(request$2):",
-      "\t${3:pass}"
-    ],
+    "body": ["def ${1:function}(request$2):", "\t${3:pass}"],
     "description": "def function with request"
   },
   "class object": {
@@ -57,18 +54,12 @@
   },
   "class model": {
     "prefix": "cm",
-    "body": [
-      "class ${1:Name}(${2:models.Model}):",
-      "\t${3:pass}"
-    ],
+    "body": ["class ${1:Name}(${2:models.Model}):", "\t${3:pass}"],
     "description": "class model"
   },
   "class form": {
     "prefix": "cf",
-    "body": [
-      "class ${1:Name}Form(forms.${2:ModelForm}):",
-      "\t${3:pass}"
-    ],
+    "body": ["class ${1:Name}Form(forms.${2:ModelForm}):", "\t${3:pass}"],
     "description": "class form"
   },
   "return": {
