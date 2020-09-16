@@ -16,7 +16,7 @@
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
   "editor.formatOnPaste": true,
-  "editor.fontFamily": "Fira Code Medium, Operator Mono, Fira Code, Hack",
+  "editor.fontFamily": "Fura Code Nerd Font Mono,Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 17,
   "editor.lineHeight": 24,
   "editor.fontLigatures": true,
@@ -331,7 +331,7 @@
     }
   },
   "todo-tree.general.tags": ["TODO", "FIXME", "QUESTION", "NOTE"],
-  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontFamily": "Fura Code Nerd Font Mono,Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
@@ -379,7 +379,7 @@
   },
   "todo-tree.tree.showScanModeButton": false,
   "editor.accessibilitySupport": "on",
-  "workbench.preferredDarkColorTheme": "Monokai Challenger Deep",
+  "workbench.colorTheme": "Atom One Dark",
   "zenMode.hideActivityBar": false,
   "[dart]": {
     "editor.formatOnSave": true,
