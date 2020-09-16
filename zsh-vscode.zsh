@@ -92,6 +92,7 @@ ZSH_VSCODE_PACKAGES=(
         vscode-icons-team.vscode-icons
         arcticicestudio.nord-visual-studio-code
         nutstick.challenger-deep-monokai
+        akamud.vscode-theme-onedark
 
         # vim
         vscodevim.vim
