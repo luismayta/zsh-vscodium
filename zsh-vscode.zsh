@@ -114,11 +114,11 @@ function code::install {
 }
 
 function vscode::path::linux {
-    echo "${HOME}"/.config/Code/User
+    echo "${HOME}"/.config/VSCodium/User
 }
 
 function vscode::path::osx {
-    echo "${HOME}"/Library/Application\ Support/Code/User
+    echo "${HOME}"/Library/Application\ Support/VSCodium/User
 }
 
 function vscode::path::factory {
@@ -138,7 +138,7 @@ function vscode::install {
         message_warning "it's neccesary brew, add: luismayta/zsh-brew"
         return
     fi
-    brew cask install visual-studio-code
+    brew cask install vscodium
     message_success "Installed vscode"
 }
 
