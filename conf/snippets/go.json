@@ -41,9 +41,7 @@
   },
   "ResponseWriter Request HandlerFunc": {
     "prefix": "wrn",
-    "body": [
-      "w http.ResponseWriter, r *http.Request, next http.HandlerFunc"
-    ],
+    "body": ["w http.ResponseWriter, r *http.Request, next http.HandlerFunc"],
     "description": "ResponseWriter Request HandlerFunc"
   },
   "ResponseWriter Request": {
