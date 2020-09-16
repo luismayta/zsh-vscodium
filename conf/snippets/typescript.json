@@ -11,11 +11,7 @@
   },
   "Return new Promise": {
     "prefix": "retpro",
-    "body": [
-      "return new Promise((resolve, reject) => {",
-      "  $2",
-      "})"
-    ],
+    "body": ["return new Promise((resolve, reject) => {", "  $2", "})"],
     "description": "Returns new Promise"
   },
   "Print to console": {
@@ -29,12 +25,7 @@
   },
   "iife": {
     "prefix": "iife",
-    "body": [
-      "(function () {",
-      "\t'use strict';\n",
-      "\t$1",
-      "}());"
-    ],
+    "body": ["(function () {", "\t'use strict';\n", "\t$1", "}());"],
     "description": "Immediately-invoked function expression"
   },
   "fun": {
