@@ -4,7 +4,7 @@ How To Contribute
 .. contents::
    :local:
 
-Contributions to zsh-vscode are welcome.
+Contributions to zsh-vscodium are welcome.
 
 Getting Started
 ---------------
@@ -140,5 +140,5 @@ Try to keep history as linear as possible using a `rebase` merge strategy.
 
 #. Delete merged Branch
 
-.. _Issue: https://github.com/luismayta/zsh-vscode/issues
-.. _Pull Request: https://github.com/luismayta/zsh-vscode/pulls
+.. _Issue: https://github.com/luismayta/zsh-vscodium/issues
+.. _Pull Request: https://github.com/luismayta/zsh-vscodium/pulls
