@@ -17,9 +17,9 @@ replace = """
 
 [[files."CHANGELOG.rst"]]
 search = """
-.. _`Unreleased`: https://github.com/luismayta/zsh-vscode/compare/{{old_version}}...HEAD
+.. _`Unreleased`: https://github.com/luismayta/zsh-vscodium/compare/{{old_version}}...HEAD
 """
 replace = """
-.. _`Unreleased`: https://github.com/luismayta/zsh-vscode/compare/{{new_version}}...HEAD
-.. _`{{new_version}}`: https://github.com/luismayta/zsh-vscode/compare/{{old_version}}...{{new_version}}
+.. _`Unreleased`: https://github.com/luismayta/zsh-vscodium/compare/{{new_version}}...HEAD
+.. _`{{new_version}}`: https://github.com/luismayta/zsh-vscodium/compare/{{old_version}}...{{new_version}}
 """

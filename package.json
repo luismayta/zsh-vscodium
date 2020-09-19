@@ -1,9 +1,9 @@
 {
   "keywords": [],
-  "name": "@luismayta/zsh-vscode",
-  "description": "zsh-vscode for zsh",
+  "name": "@luismayta/zsh-vscodium",
+  "description": "zsh-vscodium for zsh",
   "private": true,
-  "repository": "ssh://git@github.com/luismayta/zsh-vscode.git",
+  "repository": "ssh://git@github.com/luismayta/zsh-vscodium.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
   "license": "MIT",
   "stylintrc": ".stylintrc",

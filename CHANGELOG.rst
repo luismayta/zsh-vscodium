@@ -8,7 +8,7 @@ This file uses change log convention from `keep a CHANGELOG`_.
 `Unreleased`_
 ^^^^^^^^^^^^^
 
-.. _`Unreleased`: https://github.com/luismayta/zsh-vscode/compare/0.0.0...HEAD
-.. _`0.0.0`: https://gitlab.com/luismayta/zsh-vscode/compare/0.0.0...0.0.0
+.. _`Unreleased`: https://github.com/luismayta/zsh-vscodium/compare/0.0.0...HEAD
+.. _`0.0.0`: https://gitlab.com/luismayta/zsh-vscodium/compare/0.0.0...0.0.0
 
 .. _`keep a CHANGELOG`: http://keepachangelog.com/en/0.3.0/
