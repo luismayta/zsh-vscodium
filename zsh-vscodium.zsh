@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 
 #
-# Defines install vscode for osx or linux.
+# Defines install vscodium for osx or linux.
 #
 # Authors:
 #   Luis Mayta <slovacus@gmail.com>
 
-vscode_package_name="vscode"
-ZSH_VSCODE_PATH_ROOT=$(dirname "$0")
-ZSH_VSCODE_PACKAGES=(
+vscodium_package_name="vscodium"
+ZSH_VSCODIUM_PATH_ROOT=$(dirname "$0")
+ZSH_VSCODIUM_PACKAGES=(
         aeschli.vscode-css-formatter
         bierner.markdown-preview-github-styles
         EditorConfig.EditorConfig
@@ -113,80 +113,80 @@ function code::install {
     code --install-extension "${1}" --force
 }
 
-function vscode::path::linux {
+function vscodium::path::linux {
     echo "${HOME}"/.config/VSCodium/User
 }
 
-function vscode::path::osx {
+function vscodium::path::osx {
     echo "${HOME}"/Library/Application\ Support/VSCodium/User
 }
 
-function vscode::path::factory {
+function vscodium::path::factory {
     case "${OSTYPE}" in
     darwin*)
-        vscode::path::osx
+        vscodium::path::osx
         ;;
     linux*)
-        vscode::path::linux
+        vscodium::path::linux
     ;;
     esac
 }
 
-function vscode::install {
-    message_info "Installing vscode"
+function vscodium::install {
+    message_info "Installing vscodium"
     if ! type -p brew > /dev/null; then
         message_warning "it's neccesary brew, add: luismayta/zsh-brew"
         return
     fi
     brew cask install vscodium
-    message_success "Installed vscode"
+    message_success "Installed vscodium"
 }
 
 function rsync::install {
-    message_info "Installing rsync for ${vscode_package_name}"
+    message_info "Installing rsync for ${vscodium_package_name}"
     if ! type -p brew > /dev/null; then
         message_warning "it's neccesary brew, add: luismayta/zsh-brew"
     fi
     brew install rsync
-    message_success "Installed rsync ${vscode_package_name}"
+    message_success "Installed rsync ${vscodium_package_name}"
 }
 
 if ! type -p rsync > /dev/null; then rsync::install; fi
 
-function vscode::init {
+function vscodium::init {
     if ! type -p code > /dev/null; then
-        message_warning "Is Neccesary Installing required vscode packages"
+        message_warning "Is Neccesary Installing required vscodium packages"
     fi
 }
 
-function vscode::sync {
-    local vscode_path_conf_user
-    vscode_path_conf_user="$(vscode::path::factory)"
-    rsync -avzh --progress "${ZSH_VSCODE_PATH_ROOT}/conf/" "${vscode_path_conf_user}/"
+function vscodium::sync {
+    local vscodium_path_conf_user
+    vscodium_path_conf_user="$(vscodium::path::factory)"
+    rsync -avzh --progress "${ZSH_VSCODIUM_PATH_ROOT}/conf/" "${vscodium_path_conf_user}/"
 }
 
-function vscode::post_install {
-    vscode::load
+function vscodium::post_install {
+    vscodium::load
 
     if ! type -p code > /dev/null; then
-        message_warning "it's neccesary have vscode"
+        message_warning "it's neccesary have vscodium"
         return
     fi
 
-    for package in "${ZSH_VSCODE_PACKAGES[@]}"; do
+    for package in "${ZSH_VSCODIUM_PACKAGES[@]}"; do
         code::install "${package}"
     done
 
 }
 
-function vscode::load {
+function vscodium::load {
     if type -p code > /dev/null; then
-        vscode::init
+        vscodium::init
     fi
 }
 
-vscode::load
+vscodium::load
 
 if ! type -p code > /dev/null; then
-    vscode::install
+    vscodium::install
 fi
