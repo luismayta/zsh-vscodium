@@ -7,13 +7,13 @@ services:
   app:
     environment: &environment
       - STAGE=local
-    image: zsh-vscode-app-dev
+    image: zsh-vscodium-app-dev
     build:
       args:
         stage: dev
 
   check:
-    image: zsh-vscode-check-dev
+    image: zsh-vscodium-check-dev
     environment: *environment
     build:
       context: .

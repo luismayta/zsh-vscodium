@@ -1,13 +1,13 @@
-zsh-vscode
-==========
+zsh-vscodium
+============
 
 |Build Status| |GitHub issues| |GitHub license|
 
 :Version: 0.0.0
-:Web: https://github.com/luismayta/zsh-vscode
-:Download: https://github.com/luismayta/zsh-vscode
-:Source: https://github.com/luismayta/zsh-vscode
-:Keywords: zsh-vscode
+:Web: https://github.com/luismayta/zsh-vscodium
+:Download: https://github.com/luismayta/zsh-vscodium
+:Source: https://github.com/luismayta/zsh-vscodium
+:Keywords: zsh-vscodium
 
 .. contents:: Table of Contents:
     :local:
@@ -39,9 +39,9 @@ plugin by doing the following:
 1. Go to your oh-my-zsh custom plugins directory -
    ``cd ~/.oh-my-zsh/custom/plugins``
 2. Clone the plugin
-   ``bash   git clone https://github.com/luismayta/zsh-vscode``\ bash
+   ``bash   git clone https://github.com/luismayta/zsh-vscodium``\ bash
 3. Edit your ``.zshrc`` and add
-   ``plugins=( ... zsh-vscode )`` to your list of
+   ``plugins=( ... zsh-vscodium )`` to your list of
    plugins
 4. Open a new terminal and enjoy!
 
@@ -51,10 +51,10 @@ plugin by doing the following:
 If you're using `Antigen <https://github.com/zsh-lovers/antigen>`__,
 install this plugin by doing the following:
 
-1. Add ``antigen bundle luismayta/zsh-vscode`` to your
+1. Add ``antigen bundle luismayta/zsh-vscodium`` to your
    ``.zshrc`` where you're adding your other plugins.
 2. Either open a new terminal to force zsh to load the new plugin, or
-   run ``antigen bundle luismayta/zsh-vscode`` in a
+   run ``antigen bundle luismayta/zsh-vscodium`` in a
    running zsh session.
 3. Enjoy!
 
@@ -68,11 +68,11 @@ install this plugin by doing the following:
 
     .. code-block:: bash
 
-        antibody bundle luismayta/zsh-vscode
+        antibody bundle luismayta/zsh-vscodium
 
     to your ``.zshrc`` where you're adding your other plugins.
 2. Either open a new terminal to force zsh to load the new plugin, or
-   run ``antibody bundle luismayta/zsh-vscode`` in a
+   run ``antibody bundle luismayta/zsh-vscodium`` in a
    running zsh session.
 3. Enjoy!
 
@@ -163,10 +163,10 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 .. _`Website`: http://luismayta.github.io
 .. _`PGP`: https://keybase.io/luismayta/pgp_keys.asc
 
-.. |Build Status| image:: https://travis-ci.org/luismayta/zsh-vscode.svg
-   :target: https://travis-ci.org/luismayta/zsh-vscode
-.. |GitHub issues| image:: https://img.shields.io/github/issues/luismayta/zsh-vscode.svg
-   :target: https://github.com/luismayta/zsh-vscode/issues
+.. |Build Status| image:: https://travis-ci.org/luismayta/zsh-vscodium.svg
+   :target: https://travis-ci.org/luismayta/zsh-vscodium
+.. |GitHub issues| image:: https://img.shields.io/github/issues/luismayta/zsh-vscodium.svg
+   :target: https://github.com/luismayta/zsh-vscodium/issues
 .. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
    :target: LICENSE
 
@@ -177,8 +177,8 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 .. Footer:
 .. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
    :target: https://pe.linkedin.com/in/luismayta
-.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/luismayta/zsh-vscode/readme
-   :target: https://github.com/luismayta/zsh-vscode
+.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/luismayta/zsh-vscodium/readme
+   :target: https://github.com/luismayta/zsh-vscodium
 .. |made| image:: https://img.shields.io/badge/Made%20with-Zsh-1f425f.svg
    :target: http://www.zsh.org
 

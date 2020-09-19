@@ -2,7 +2,7 @@ FROM equipindustry/python:3.8.0-slim
 
 ARG stage
 
-LABEL NAME zsh-vscode-app-$stage
+LABEL NAME zsh-vscodium-app-$stage
 
 ENV USERNAME developer
 
