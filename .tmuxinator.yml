@@ -1,5 +1,5 @@
-# ~/.tmuxinator/zsh-vscode.yml
-name: zsh-vscode
+# ~/.tmuxinator/zsh-vscodium.yml
+name: zsh-vscodium
 root: ./
 # Optional tmux socket
 # socket_name: foo

@@ -6,7 +6,7 @@
 version: '3.6'
 services:
   app:
-    image: zsh-vscode-app-test
+    image: zsh-vscodium-app-test
     environment: &environment
       - STAGE=testing
     build:

@@ -21,7 +21,7 @@ TEAM :=luismayta
 REPOSITORY_DOMAIN:=github.com
 REPOSITORY_OWNER:=${TEAM}
 AWS_VAULT ?= ${TEAM}
-PROJECT := zsh-vscode
+PROJECT := zsh-vscodium
 PROJECT_PORT := 3000
 
 PYTHON_VERSION=3.8.0

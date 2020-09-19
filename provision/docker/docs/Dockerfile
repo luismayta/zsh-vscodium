@@ -2,7 +2,7 @@ FROM sphinxdoc/docker-ci
 
 ARG stage
 
-LABEL NAME zsh-vscode-doc
+LABEL NAME zsh-vscodium-doc
 
 ENV USERNAME developer
 
