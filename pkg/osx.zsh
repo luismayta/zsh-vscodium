@@ -12,3 +12,8 @@ function vscodium::install {
 }
 
 if ! type -p code > /dev/null; then vscodium::install; fi
+
+function vscodium::fix {
+    sed -i '' 's,https://open-vsx.org/vscode/gallery,https://marketplace.visualstudio.com/_apis/public/gallery,g' "${VSCODIUM_PRODUCT_FILENAME}"
+    sed -i '' 's,https://open-vsx.org/vscode/item,https://marketplace.visualstudio.com/items,g' "${VSCODIUM_PRODUCT_FILENAME}"
+}
