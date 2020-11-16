@@ -6,6 +6,7 @@ function vscodium::sync {
 }
 
 function vscodium::packages::install {
+    vscodium::packages::fix
     for package in "${VSCODIUM_PACKAGES[@]}"; do
        vscodium::internal::extension::install "${package}"
     done
@@ -16,7 +17,6 @@ function vscodium::post_install {
         message_warning "it's neccesary have vscodium"
         return
     fi
-    vscodium::fix
     vscodium::packages::install
     vscodium::sync
 }

@@ -1,5 +1,9 @@
 #!/usr/bin/env ksh
 # -*- coding: utf-8 -*-
+function vscodium::packages::fix {
+    sudo sed -i '' 's,https://open-vsx.org/vscode/gallery,https://marketplace.visualstudio.com/_apis/public/gallery,g' "${VSCODIUM_PRODUCT_FILENAME}"
+    sudo sed -i '' 's,https://open-vsx.org/vscode/item,https://marketplace.visualstudio.com/items,g' "${VSCODIUM_PRODUCT_FILENAME}"
+}
 
 function vscodium::install {
     message_info "Installing vscodium"
@@ -9,9 +13,4 @@ function vscodium::install {
     fi
     brew cask install vscodium
     message_success "Installed vscodium"
-}
-
-function vscodium::fix {
-    sudo sed -i '' 's,https://open-vsx.org/vscode/gallery,https://marketplace.visualstudio.com/_apis/public/gallery,g' "${VSCODIUM_PRODUCT_FILENAME}"
-    sudo sed -i '' 's,https://open-vsx.org/vscode/item,https://marketplace.visualstudio.com/items,g' "${VSCODIUM_PRODUCT_FILENAME}"
 }
