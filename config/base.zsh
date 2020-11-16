@@ -17,11 +17,21 @@ export VSCODIUM_PACKAGES=(
         # languages
         ms-python.python
         trixnz.vscode-lua
+
+        # dart
+        luanpotter.dart-import
         Dart-Code.dart-code
-        4ops.terraform
         Dart-Code.flutter
+        BendixMa.dart-data-class-generator
         kumar-harsh.graphql-for-vscode
         gornivv.vscode-flutter-files
+        alexisvt.flutter-snippets
+        oscarcs.dart-syntax-highlighting-only
+        aksharpatel47.vscode-flutter-helper
+        esskar.vscode-flutter-i18n-json
+        everettjf.pubspec-dependency-search
+
+        4ops.terraform
 
         # git
         felipecaputo.git-project-manager
