@@ -1,5 +1,9 @@
 #!/usr/bin/env ksh
 # -*- coding: utf-8 -*-
+function vscodium::packages::fix {
+    sed -i '' 's,https://open-vsx.org/vscode/gallery,https://marketplace.visualstudio.com/_apis/public/gallery,g' "${VSCODIUM_PRODUCT_FILENAME}"
+    sed -i '' 's,https://open-vsx.org/vscode/item,https://marketplace.visualstudio.com/items,g' "${VSCODIUM_PRODUCT_FILENAME}"
+}
 
 function vscodium::install {
     message_info "Installing vscodium"
@@ -12,8 +16,3 @@ function vscodium::install {
 }
 
 if ! type -p code > /dev/null; then vscodium::install; fi
-
-function vscodium::fix {
-    sed -i '' 's,https://open-vsx.org/vscode/gallery,https://marketplace.visualstudio.com/_apis/public/gallery,g' "${VSCODIUM_PRODUCT_FILENAME}"
-    sed -i '' 's,https://open-vsx.org/vscode/item,https://marketplace.visualstudio.com/items,g' "${VSCODIUM_PRODUCT_FILENAME}"
-}
