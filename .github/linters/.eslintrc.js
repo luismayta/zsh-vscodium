@@ -1,10 +1,12 @@
 module.exports = {
   extends: [
     'standard',
+    'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:promise/recommended',
+    'plugin:react-hooks/recommended',
     'plugin:prettier/recommended', // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
     'prettier',
   ],
@@ -27,16 +29,19 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       extends: [
         'standard',
+        'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
         'plugin:@typescript-eslint/recommended',
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
         'plugin:promise/recommended',
+        'plugin:react-hooks/recommended',
         'plugin:prettier/recommended', // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+        'plugin:jsx-a11y/recommended',
         'prettier',
         'prettier/@typescript-eslint',
       ],
-      plugins: ['prettier'],
+      plugins: ['prettier', 'react-hooks', 'jsx-a11y'],
       parserOptions: {
         ecmaversion: 2018,
         project: './tsconfig.json',
@@ -54,6 +59,7 @@ module.exports = {
         },
       },
       rules: {
+        'react/react-in-jsx-scope': 0,
         'ordered-imports': 0,
         quotemark: 0,
         'no-console': 0,
@@ -103,7 +109,9 @@ module.exports = {
     },
     {
       files: ['**/*.tsx'],
-      rules: {},
+      rules: {
+        'react/prop-types': 'off',
+      },
     },
   ],
 }
