@@ -1,6 +1,6 @@
 {
   "name": "@luismayta/zsh-vscodium",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "zsh-vscodium for zsh",
   "repository": "ssh://git@github.com/luismayta/zsh-vscodium.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
