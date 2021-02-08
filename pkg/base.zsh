@@ -9,6 +9,10 @@ function vscodium::packages::install {
     vscodium::internal::packages::install
 }
 
+function vscodium::install {
+    vscodium::internal::vscodium::install
+}
+
 function vscodium::post_install {
     if ! type -p code > /dev/null; then
         message_warning "it's neccesary have vscodium"
