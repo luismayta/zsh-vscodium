@@ -17,3 +17,6 @@ function vscodium::internal::main::factory {
 }
 
 vscodium::internal::main::factory
+
+if ! type -p curl > /dev/null; then vscodium::internal::curl::install; fi
+if ! [ -e /Applications/VSCodium.app ]; then vscodium::internal::vscodium::install; fi
