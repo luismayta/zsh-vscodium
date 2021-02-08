@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 function vscodium::sync {
-    rsync -avzh --progress "${ZSH_VSCODIUM_PATH}/conf/" "${VSCODIUM_PATH}/"
+    rsync -avP "${ZSH_VSCODIUM_PATH}/conf/" "${VSCODIUM_PATH}/"
 }
 
 function vscodium::packages::install {
