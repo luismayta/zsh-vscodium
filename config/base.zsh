@@ -5,30 +5,28 @@ export VSCODIUM_PACKAGE_NAME="vscodium"
 export VSCODIUM_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/zsh-brew branch:develop"
 export VSCODIUM_MESSAGE_NOT_FOUND="this not found installed"
 export VSCODIUM_PACKAGES=(
-        aeschli.vscode-css-formatter
-        bierner.markdown-preview-github-styles
         EditorConfig.EditorConfig
         ms-azuretools.vscode-docker
         aaron-bond.better-comments
-
-        # tasks
-        Gruntfuggly.todo-tree
 
         # languages
         ms-python.python
         trixnz.vscode-lua
 
+        kumar-harsh.graphql-for-vscode
         # dart
         luanpotter.dart-import
         Dart-Code.dart-code
-        Dart-Code.flutter
         BendixMa.dart-data-class-generator
-        kumar-harsh.graphql-for-vscode
-        gornivv.vscode-flutter-files
-        alexisvt.flutter-snippets
         oscarcs.dart-syntax-highlighting-only
+
+        # flutter
+        Dart-Code.flutter
+        gornivv.vscode-flutter-files
         aksharpatel47.vscode-flutter-helper
         esskar.vscode-flutter-i18n-json
+
+        # pub
         everettjf.pubspec-dependency-search
 
         4ops.terraform
@@ -65,7 +63,7 @@ export VSCODIUM_PACKAGES=(
         christian-kohler.npm-intellisense
         leizongmin.node-module-intellisense
         jasonnutter.search-node-modules
-        # kiteco.kite
+
         mrmlnc.vscode-scss
 
         # linters
@@ -79,7 +77,6 @@ export VSCODIUM_PACKAGES=(
         # React
         jawandarajbir.react-vscode-extension-pack
         jingkaizhao.vscode-redux-devtools
-        xabikos.ReactSnippets
 
         # Tools
         esbenp.prettier-vscode
@@ -108,6 +105,7 @@ export VSCODIUM_PACKAGES=(
         Nash.awesome-flutter-snippets
         xabikos.JavaScriptSnippets
         infeng.vscode-react-typescript
+        xabikos.ReactSnippets
 
         # refactor
         wix.glean
