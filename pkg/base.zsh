@@ -6,10 +6,7 @@ function vscodium::sync {
 }
 
 function vscodium::packages::install {
-    vscodium::packages::fix
-    for package in "${VSCODIUM_PACKAGES[@]}"; do
-       vscodium::internal::extension::install "${package}"
-    done
+    vscodium::internal::packages::install
 }
 
 function vscodium::post_install {
