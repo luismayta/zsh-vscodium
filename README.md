@@ -12,27 +12,33 @@
 
   -->
 
+ 
+
 # zsh-vscodium
 
-[![Build Status](https://travis-ci.org/luismayta/zsh-vscodium.svg?branch=main)](https://travis-ci.org/luismayta/zsh-vscodium) [![Issues](https://img.shields.io/github/issues/luismayta/zsh-vscodium.svg)](https://github.com/luismayta/zsh-vscodium/issues) [![Latest Release](https://img.shields.io/github/release/luismayta/zsh-vscodium.svg)](https://travis-ci.org/luismayta/zsh-vscodium/releases)
+ [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/luismayta/zsh-vscodium?label=latest&sort=semver)](https://github.com/luismayta/zsh-vscodium/releases) [![Lint](https://img.shields.io/github/workflow/status/luismayta/zsh-vscodium/lint-code)](https://github.com/luismayta/zsh-vscodium/actions) [![Issues](https://img.shields.io/github/issues/luismayta/zsh-vscodium)](https://github.com/luismayta/zsh-vscodium/issues) [![Latest Release](https://img.shields.io/github/release/luismayta/zsh-vscodium)](https://github.com/luismayta/zsh-vscodium/releases)
 
-zsh-vscodium plugin for zsh.
+ 
+zsh-vscodium plugin for zsh. 
 
----
 
-This project is part of our comprehensive [hadenlabs](https://hadenlabs.com) plugins of zsh.
 
-It's 100% Open Source and licensed under the [MIT](LICENSE).
+
+
+
+
+
+
+
 
 ## Requirements
 
+
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-```{.sourceCode .bash}
-https://github.com/luismayta/zsh-core
-https://github.com/luismayta/zsh-notify
-https://github.com/luismayta/zsh-functions
-```
+* [zsh-core](https://github.com/hadenlabs/zsh-core)
+
+
 
 ## Installation
 
@@ -42,20 +48,18 @@ If you're using [oh-my-zsh](https://gitub.com/robbyrussell/oh-my-zsh), install t
 
 1.  Go to your oh-my-zsh custom plugins directory -`cd ~/.oh-my-zsh/custom/plugins`
 2.  Clone the plugin `bash git clone https://github.com/luismayta/zsh-vscodium`bash
-3.  Edit your `.zshrc` and add `plugins=( ... zsh-vscodium )` to your list of plugins
+3.  Edit your `.zshrc` and add `plugins=( ... luismayta/zsh-vscodium )` to your list of plugins
 4.  Open a new terminal and enjoy!
-
 ### [antigen](https://github.com/zsh-users/antigen) users
 
-If you're using [Antigen](https://github.com/zsh-lovers/antigen), install this plugin by doing the following:
+If you're using [Antigen](https://github.com/zsh-users/antigen), install this plugin by doing the following:
 
 1.  Add `antigen bundle luismayta/zsh-vscodium` to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antigen bundle luismayta/zsh-vscodium` in a running zsh session.
 3.  Enjoy!
-
 ### [antibody](https://github.com/getantibody/antibody) users
 
-If you're using [Antigen](https://github.com/getantibody/antibody), install this plugin by doing the following:
+If you're using [Antibody](https://github.com/getantibody/antibody), install this plugin by doing the following:
 
 1.  Add :
 
@@ -68,17 +72,39 @@ to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle luismayta/zsh-vscodium` in a running zsh session.
 3.  Enjoy!
 
-## Usage
 
-```bash
-make setup
-```
+
+
+
+
+
+
+ ## Functions
+
+zsh vscodium includes a small utility `vscodium` to fetch and install new packages.
+
+#### `vscodium::install`
+
+Install vscodium.
+
+#### `vscodium::load`
+
+Load path vscodium.
+
+#### `vscodium::post_install`
+
+Install dependences of vscodium.
+
+
+
+
+
 
 ## Help
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/luismayta/zsh-vscodium/issues), send us an [email][email] or join our [Slack Community][slack].
+File a GitHub [issue](https://github.com/luismayta/zsh-vscodium/issues).
 
 ## Contributing
 
@@ -86,9 +112,7 @@ File a GitHub [issue](https://github.com/luismayta/zsh-vscodium/issues), send us
 
 Please use the [issue tracker](https://github.com/luismayta/zsh-vscodium/issues) to report any bugs or file feature requests.
 
-### Developing
-
-If you are interested in being a contributor and want to get involved in developing this project or [help out](https://hadenlabs.com) with our other projects, we would love to hear from you! Shoot us an [email](mailto:support@hadenlabs.com).
+### Development
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
@@ -100,41 +124,41 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 **NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
 
-### Versioning
+## Module Versioning
 
-Releases are managed using github release feature. We use \[Semantic Versioning\](<http://semver.org>) for all the releases. Every change made to the code base will be referred to in the release notes (except for cleanups and refactorings).
+This Module follows the principles of [Semantic Versioning (SemVer)](https://semver.org/).
+
+Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following constructs:
+
+1. Use the `MAJOR` version for incompatible changes.
+1. Use the `MINOR` version when adding functionality in a backwards compatible manner.
+1. Use the `PATCH` version when introducing backwards compatible bug fixes.
+
+### Backwards compatibility in `0.0.z` and `0.y.z` version
+
+- In the context of initial development, backwards compatibility in versions `0.0.z` is **not guaranteed** when `z` is increased. (Initial development)
+- In the context of pre-release, backwards compatibility in versions `0.y.z` is **not guaranteed** when `y` is increased. (Pre-release)
+
+
 
 ## Copyright
 
-Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com)
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-The MIT License (MIT)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-Source: <https://opensource.org/licenses/MIT>
+Copyright © 2018-2021 [Hadenlabs](https://hadenlabs.com) 
 
 ## Trademarks
 
 All other trademarks referenced herein are the property of their respective owners.
 
-## About
-
-This project is maintained and funded by [Hadenlabs][https://hadenlabs.com]. Like it? Please let us know at <support@hadenlabs.com>
-
-### Contributors
-
-| [![Luis Mayta][luismayta_avatar]][luismayta_homepage]<br/>[Luis Mayta][luismayta_homepage] |
-| ------------------------------------------------------------------------------------------ |
 
 
-[luismayta_homepage]: https://github.com/luismayta
-[luismayta_avatar]: https://github.com/luismayta.png?size=150
+
+
+## License
+
+The code and styles are licensed under the LGPL-3.0 license [See project license.](LICENSE).
+
+
+
+## Don't forget to 🌟 Star 🌟 the repo if you like zsh-vscodium
+
+[Your feedback is appreciated](https://github.com/luismayta/zsh-vscodium/issues)
