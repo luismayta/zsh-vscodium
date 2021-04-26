@@ -31,9 +31,6 @@ export VSCODIUM_PACKAGES=(
 
         4ops.terraform
 
-        # git
-        felipecaputo.git-project-manager
-
         # appareance
         sirtori.indenticator
         coenraads.bracket-pair-colorizer-2
@@ -50,7 +47,6 @@ export VSCODIUM_PACKAGES=(
         bierner.markdown-preview-github-styles
         Tyriar.sort-lines
         silvenon.mdx
-        selbh.keyboard-scroll
         alefragnani.bookmarks
         jebbs.plantuml
 
@@ -69,10 +65,6 @@ export VSCODIUM_PACKAGES=(
         # linters
         ms-vscode.vscode-typescript-tslint-plugin
         dbaeumer.vscode-eslint
-        streetsidesoftware.code-spell-checker
-
-        # debug
-        msjsdiag.debugger-for-chrome
 
         # React
         jawandarajbir.react-vscode-extension-pack
@@ -101,7 +93,6 @@ export VSCODIUM_PACKAGES=(
 
         # snippets
         alexisvt.flutter-snippets
-        dsznajder.es7-react-js-snippets
         Nash.awesome-flutter-snippets
         xabikos.JavaScriptSnippets
         infeng.vscode-react-typescript
