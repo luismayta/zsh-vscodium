@@ -14,8 +14,8 @@ function vscodium::install {
 }
 
 function vscodium::post_install {
-    if ! type -p code > /dev/null; then
-        message_warning "it's neccesary have vscodium"
+    if ! type -p codium > /dev/null; then
+        message_warning "it's necessary have vscodium"
         return
     fi
     vscodium::packages::install
