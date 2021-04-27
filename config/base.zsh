@@ -1,6 +1,11 @@
 #!/usr/bin/env ksh
 # -*- coding: utf-8 -*-
 
+export VSCODE_GALLERY_SERVICE_URL='https://marketplace.visualstudio.com/_apis/public/gallery'
+export VSCODE_GALLERY_CACHE_URL='https://vscode.blob.core.windows.net/gallery/index'
+export VSCODE_GALLERY_ITEM_URL='https://marketplace.visualstudio.com/items'
+export VSCODE_GALLERY_CONTROL_URL=''
+export VSCODE_GALLERY_RECOMMENDATIONS_URL=''
 export VSCODIUM_PACKAGE_NAME="vscodium"
 export VSCODIUM_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/zsh-brew branch:develop"
 export VSCODIUM_MESSAGE_NOT_FOUND="this not found installed"
@@ -49,6 +54,9 @@ export VSCODIUM_PACKAGES=(
         silvenon.mdx
         alefragnani.bookmarks
         jebbs.plantuml
+
+        # projects
+        hadenlabs.ghq-project-manager
 
         # buffers
         serafeim.goto-previous-buffer
