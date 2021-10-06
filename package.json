@@ -54,7 +54,7 @@
   "homepage": "https://github.com/luismayta/zsh-vscodium#readme",
   "dependencies": {},
   "devDependencies": {
-    "@babel/eslint-parser": "^7.15.7",
+    "@babel/eslint-parser": "^7.15.8",
     "@commitlint/cli": "^13.2.0",
     "@hadenlabs/commitlint-config": "^0.1.0",
     "@types/glob": "^7.1.4",
