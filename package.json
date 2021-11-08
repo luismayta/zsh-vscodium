@@ -6,7 +6,7 @@
   "author": "Luis Mayta <slovacus@gmail.com>",
   "license": "LGPL-3.0",
   "engines": {
-    "node": ">=14"
+    "node": ">=v14.18.1"
   },
   "keywords": [],
   "scripts": {
@@ -58,7 +58,7 @@
     "@commitlint/cli": "^14.1.0",
     "@hadenlabs/commitlint-config": "^0.1.0",
     "@types/glob": "^7.2.0",
-    "@types/node": "^14.14.42",
+    "@types/node": "^14.17.33",
     "@types/rimraf": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
