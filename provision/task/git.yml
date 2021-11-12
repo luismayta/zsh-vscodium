@@ -1,0 +1,49 @@
+version: '3'
+
+tasks:
+  check:
+    desc: Exist git and dependences
+    run: once
+    deps:
+      - task: check:git
+      - task: check:gi
+
+  check:git:
+    desc: Exist git
+    run: once
+    preconditions:
+      - sh: command -v git
+        msg: 'Please Install git'
+
+  check:gi:
+    desc: Exist gi
+    run: once
+    preconditions:
+      - sh: command -v gi
+        msg: 'Please Install gi'
+
+  setup:
+    desc: Setup git.
+    run: once
+    cmds:
+      - task: ignore
+      - task: reviews
+
+  ignore:
+    desc: Generate ignore.
+    run: once
+    silent: true
+    cmds:
+      - gi {{.GIT_IGNORES}} > .gitignore
+      - echo "# custom git ignore files" >> .gitignore
+      - echo {{.GIT_IGNORES_CUSTOM}} | tr ' ' '\n' | sort -u >> .gitignore
+    deps:
+      - task: check:gi
+
+  reviews:
+    desc: Add issues revievers.
+    run: once
+    cmds:
+      - git config github.reviews {{.REVIEWERS}}
+    deps:
+      - task: check:git
