@@ -1,11 +1,11 @@
 {
-  "baseUrl": "https://github.com/hadenlabs/zsh-vscodium",
+  "baseUrl": "https://github.com/luismayta/zsh-vscodium",
   "ignorePatterns": [
     {
       "pattern": "^https://hadenlabs.com"
     },
     {
-      "pattern": "^https://github.com/hadenlabs/zsh-vscodium/compare"
+      "pattern": "^https://github.com/luismayta/zsh-vscodium/compare"
     }
   ],
   "replacementPatterns": [
