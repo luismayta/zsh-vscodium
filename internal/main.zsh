@@ -14,6 +14,8 @@ function vscodium::internal::main::factory {
         source "${ZSH_VSCODIUM_PATH}"/internal/linux.zsh
       ;;
     esac
+    # shellcheck source=/dev/null
+    source "${ZSH_VSCODIUM_PATH}"/internal/helper.zsh
 }
 
 vscodium::internal::main::factory
