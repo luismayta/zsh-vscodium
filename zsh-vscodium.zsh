@@ -15,6 +15,9 @@ ZSH_VSCODIUM_PATH=$(dirname "${0}")
 source "${ZSH_VSCODIUM_PATH}"/config/main.zsh
 
 # shellcheck source=/dev/null
+source "${ZSH_VSCODIUM_PATH}"/core/main.zsh
+
+# shellcheck source=/dev/null
 source "${ZSH_VSCODIUM_PATH}"/internal/main.zsh
 
 # shellcheck source=/dev/null
