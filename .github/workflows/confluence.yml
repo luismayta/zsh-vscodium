@@ -1,0 +1,48 @@
+name: confluence
+
+on:
+  workflow_run:
+    workflows:
+      - sonar-scan
+    types:
+      - completed
+
+  pull_request:
+    branches:
+      - develop
+      - main
+
+  push:
+    branches:
+      - develop
+      - main
+
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      # https://semver.org/ proper release tags, more or less
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+      # prerelease tags, more or less
+      - 'v[0-9]+.[0-9]+.[0-9]+-*'
+
+env:
+  CONFLUENCE_BASE_URL: '${{ secrets.CONFLUENCE_BASE_URL }}'
+  CONFLUENCE_ACCESS_TOKEN: '${{ secrets.CONFLUENCE_ACCESS_TOKEN }}'
+  CONFLUENCE_USER: '${{ secrets.CONFLUENCE_USER }}'
+
+jobs:
+  confluence:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out a copy of the repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Install Task
+        uses: arduino/setup-task@v1
+
+      - name: Check dependences
+        run: task mark:check
+
+      - name: Sync confluence
+        run: task mark:sync
