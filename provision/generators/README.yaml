@@ -10,6 +10,10 @@ name: zsh-vscodium
 email:
   support: support@hadenlabs.com
 
+confluence:
+  space: ZshVscodium
+  title: Project
+
 # Logo for this project
 #logo: docs/logo.png
 
@@ -21,29 +25,42 @@ github_repo: luismayta/zsh-vscodium
 
 # Badges to display
 badges:
-  - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/luismayta/zsh-vscodium?label=latest&sort=semver
-    url: https://github.com/luismayta/zsh-vscodium/releases
-  - name: Lint
-    image: https://img.shields.io/github/workflow/status/luismayta/zsh-vscodium/lint-code
-    url: https://github.com/luismayta/zsh-vscodium/actions
-  - name: Issues
-    image: https://img.shields.io/github/issues/luismayta/zsh-vscodium
-    url: https://github.com/luismayta/zsh-vscodium/issues
   - name: Latest Release
     image: https://img.shields.io/github/release/luismayta/zsh-vscodium
     url: https://github.com/luismayta/zsh-vscodium/releases
-
-# Short description of this project
-description: |-
-
-  zsh-vscodium plugin for zsh.
+  - name: Lint
+    image: https://img.shields.io/github/workflow/status/luismayta/zsh-vscodium/lint-code
+    url: https://github.com/luismayta/zsh-vscodium/actions?workflow=lint-code
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
+  - name: Conventional Commits
+    image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
+    url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    url: https://keepachangelog.com
 
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
   * [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [python](https://www.python.org)
+  - [taskfile](https://github.com/go-task/task)
+
+# Short description of this project
+description: |-
+  zsh-vscodium for project
+
+  ### Replace name project to New Project
+
+  ```bash
+    agr 'zsh-vscodium' 'new-project'
+    agr 'vscodium' 'name_template'
+    agr 'VSCODIUM' 'NAME_TEMPLATE'
+    agr 'ZshVscodium' 'NameTemplate'
+  ```
 
 installation:
   - 'docs/include/installation/oh-my-zsh.md'
