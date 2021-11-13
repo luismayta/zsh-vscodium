@@ -38,7 +38,6 @@ export VSCODIUM_PACKAGES=(
 
         # appareance
         sirtori.indenticator
-        coenraads.bracket-pair-colorizer-2
         oderwat.indent-rainbow
 
         # tools
@@ -92,7 +91,6 @@ export VSCODIUM_PACKAGES=(
 
         # theme
         vscode-icons-team.vscode-icons
-        arcticicestudio.nord-visual-studio-code
         nutstick.challenger-deep-monokai
         akamud.vscode-theme-onedark
 
