@@ -16,7 +16,7 @@
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
   "editor.formatOnPaste": true,
-  "editor.fontFamily": "Fura Code Nerd Font Mono,Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Fira Code Retina, Menlo, Monaco, Courier New, monospace",
   "editor.fontSize": 17,
   "editor.lineHeight": 24,
   "editor.fontLigatures": true,
@@ -27,7 +27,7 @@
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-_",
   "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
-  "editor.tabCompletion": true,
+  "editor.tabCompletion": "on",
   "editor.quickSuggestions": {
     "other": true,
     "comments": true,
@@ -81,7 +81,6 @@
     "*.egg-info": true,
     ".venv": true
   },
-  "indentRainbow.ignoreErrorLanguages": ["haskell", "markdown"],
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -126,12 +125,8 @@
   "vim.statusBarColors.visual": "#a3be8c",
   "vim.statusBarColors.visualblock": "#a3be8c",
   "vim.statusBarColors.visualline": "#a3be8c",
-  "vim.easymotionMarkerFontFamily": "Fira Code",
   "vim.enableNeovim": false,
   "vim.easymotion": false,
-  "vim.easymotionMarkerFontSize": "16",
-  "vim.easymotionMarkerYOffset": 12,
-  "vim.easymotionMarkerHeight": 24,
   "vim.easymotionMarkerBackgroundColor": "rgba(40, 40, 40, 0.5)",
   "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.cursorStylePerMode.insert": "underline",
@@ -310,8 +305,6 @@
       "commands": ["editor.action.outdentLines"]
     }
   ],
-  "gitProjectManager.baseProjectsFolders": ["~/Projects"],
-  "gitProjectManager.storeRepositoriesBetweenSessions": true,
   "todo-tree.highlights.customHighlight": {
     "TODO": {
       "type": "tag",
@@ -331,10 +324,9 @@
     }
   },
   "todo-tree.general.tags": ["TODO", "FIXME", "QUESTION", "NOTE"],
-  "terminal.integrated.fontFamily": "Fura Code Nerd Font Mono,Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "Fira Code Retina, Menlo, Monaco, Courier New, monospace",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
   "window.zoomLevel": 0,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
@@ -365,13 +357,11 @@
   "python.jediEnabled": false,
   "zenMode.hideStatusBar": false,
   "zenMode.centerLayout": false,
-  "zenMode.hideActivityBar": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": true,
   "zenMode.hideTabs": false,
+  "zenMode.hideActivityBar": false,
   "kite.showWelcomeNotificationOnStartup": false,
-  "breadcrumbs.enabled": false,
-  "gitProjectManager.displayProjectPath": true,
   "todo-tree.highlights.defaultHighlight": {
     "type": "tag",
     "background": "#fcf3b3",
@@ -380,7 +370,6 @@
   "todo-tree.tree.showScanModeButton": false,
   "editor.accessibilitySupport": "on",
   "workbench.colorTheme": "Atom One Dark",
-  "zenMode.hideActivityBar": false,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
