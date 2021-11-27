@@ -21,15 +21,6 @@
 
 zsh-vscodium for project
 
-### Replace name project to New Project
-
-```bash
-  agr 'zsh-vscodium' 'new-project'
-  agr 'vscodium' 'name_template'
-  agr 'VSCODIUM' 'NAME_TEMPLATE'
-  agr 'ZshVscodium' 'NameTemplate'
-```
-
 ## Requirements
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
