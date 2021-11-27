@@ -53,15 +53,6 @@ requirements: |-
 description: |-
   zsh-vscodium for project
 
-  ### Replace name project to New Project
-
-  ```bash
-    agr 'zsh-vscodium' 'new-project'
-    agr 'vscodium' 'name_template'
-    agr 'VSCODIUM' 'NAME_TEMPLATE'
-    agr 'ZshVscodium' 'NameTemplate'
-  ```
-
 installation:
   - 'docs/include/installation/oh-my-zsh.md'
   - 'docs/include/installation/antigen.md'
