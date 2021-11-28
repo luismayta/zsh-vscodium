@@ -13,6 +13,7 @@ export VSCODIUM_PACKAGES=(
         EditorConfig.EditorConfig
         ms-azuretools.vscode-docker
         aaron-bond.better-comments
+        Tabnine.tabnine-vscode
 
         # languages
         ms-python.python
