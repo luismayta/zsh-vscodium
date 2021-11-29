@@ -126,7 +126,7 @@
   "vim.statusBarColors.visualblock": "#a3be8c",
   "vim.statusBarColors.visualline": "#a3be8c",
   "vim.enableNeovim": false,
-  "vim.easymotion": false,
+  "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "rgba(40, 40, 40, 0.5)",
   "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.cursorStylePerMode.insert": "underline",
@@ -258,7 +258,7 @@
       "before": ["<leader>", "f", "s", "p"],
       "commands": [
         {
-          "command": "gitProjectManager.openProject"
+          "command": "ghqProjectManager.openProject"
         }
       ]
     },
@@ -379,5 +379,6 @@
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
-  }
+  },
+  "tabnine.experimentalAutoImports": true
 }
