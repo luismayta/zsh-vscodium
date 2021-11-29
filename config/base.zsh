@@ -18,6 +18,8 @@ export VSCODIUM_PACKAGES=(
         # languages
         ms-python.python
         trixnz.vscode-lua
+        sumneko.lua
+        golang.go
 
         kumar-harsh.graphql-for-vscode
         # dart
