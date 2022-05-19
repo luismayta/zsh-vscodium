@@ -10,10 +10,6 @@ name: zsh-vscodium
 email:
   support: support@hadenlabs.com
 
-confluence:
-  space: ZshVscodium
-  title: Project
-
 # Logo for this project
 #logo: docs/logo.png
 
@@ -38,7 +34,7 @@ badges:
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
   - name: KeepAChangelog
-    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    image: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange
     url: https://keepachangelog.com
 
 requirements: |-
