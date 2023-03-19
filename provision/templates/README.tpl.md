@@ -78,12 +78,14 @@
 {{- end }}
 {{- end }}
 
-{{ if has (ds "config") "usage" }}
+{{ if has (ds "config") "usages" }}
 
 ## Usage
 
-{{ (ds "config").usage -}} {{ end }}
-
+{{ range $file := (datasource "config").usages -}}
+{{ (include "includes" $file) }}
+{{- end }}
+{{ end }}
 
 {{ if has (ds "config") "quickstart" -}}
 
@@ -136,35 +138,7 @@ File a GitLab [issue]({{ printf "https://gitlab.com/%s/-/issues" (ds "config").g
 
 ## Contributing
 
-### Bug Reports & Feature Requests
-
-{{ if has (ds "config") "github_repo" }}
-Please use the [issue tracker]({{ printf "https://github.com/%s/issues" (ds "config").github_repo}}) to report any bugs or file feature requests.
-{{ else if has (ds "config") "gitlab_host" }}
-Please use the [issue tracker]({{ printf "https://%s/%s/-/issues" (ds "config").gitlab_host (ds "config").gitlab_repo}}) to report any bugs or file feature requests.
-{{ else if has (ds "config") "gitlab_repo" }}
-Please use the [issue tracker]({{ printf "https://gitlab.com/%s/issues" (ds "config").gitlab_repo}}) to report any bugs or file feature requests.
-{{ end }}
-
-### Development
-
-In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
-
-1.  **Fork** the repo on GitHub
-2.  **Clone** the project to your own machine
-3.  **Commit** changes to your own branch
-4.  **Push** your work back up to your fork
-{{ if has (ds "config") "github_repo" }}
-5.  Submit a **Pull Request** so that we can review your changes
-{{ else if has (ds "config") "gitlab_repo" }}
-5.  Submit a **Merge Request** so that we can review your changes
-{{ end }}
-
-{{ if has (ds "config") "github_repo" }}
-**NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
-{{ else if has (ds "config") "gitlab_repo" }}
-**NOTE:** Be sure to rebase the latest changes from "upstream" before making a merge request!
-{{ end }}
+See [Contributing](./docs/contributing.md).
 
 ## Module Versioning
 

@@ -1,9 +1,8 @@
-<!-- Space: ZshVscodium -->
-<!-- Parent: Project -->
-<!-- Title: Project Examples -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshVscodium -->
+<!-- Title: Examples ZshVscodium -->
 <!-- Label: Examples -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### common
+### Common

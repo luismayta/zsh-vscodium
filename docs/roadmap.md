@@ -1,9 +1,8 @@
-<!-- Space: ZshVscodium -->
-<!-- Parent: Project -->
-<!-- Title: Roadmap -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshVscodium -->
+<!-- Title: Roadmap ZshVscodium -->
 <!-- Label: Roadmap -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 <!-- Macro: :todo:
@@ -41,4 +40,18 @@ You can see the corresponding projects on [zsh-vscodium](https://github.com/luis
 
 ## Epics
 
+### Agosto 2021
+
+### September 2021
+
+### October 2021
+
+### November 2021
+
+### December 2021
+
 ## Long Lived Initiatives
+
+These projects don't have an end date. They are something we'll continuously work towards.
+
+- [Better Docs](https://hadenlabs.atlassian.net/wiki)

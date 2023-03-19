@@ -29,10 +29,9 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 
 ## Installation
 
-<!-- Space: ZshVscodium -->
-<!-- Parent: Project -->
-<!-- Title: Project Installation Oh-My-Zsh -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshVscodium -->
+<!-- Title: Installation Oh-My-Zsh ZshVscodium -->
 <!-- Label: ZshVscodium -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
@@ -40,24 +39,23 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) users
+### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) users
 
-If you're using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), install this plugin by doing the following:
+If you're using [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh), install this plugin by doing the following:
 
 1.  Go to your oh-my-zsh custom plugins directory -`cd ~/.oh-my-zsh/custom/plugins`
 2.  Clone the plugin `bash git clone https://github.com/luismayta/zsh-vscodium`bash
-3.  Edit your `.zshrc` and add `plugins=( ... luismayta/zsh-vscodium )` to your list of plugins
+3.  Edit your `.zshrc` and add `plugins=( ... zsh-vscodium )` to your list of plugins
 4.  Open a new terminal and enjoy!
-    <!-- Space: ZshVscodium -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antigen -->
-
-<!-- Label: ZshVscodium -->
-<!-- Label: Project -->
-<!-- Label: Installation -->
-<!-- Label: Antigen -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
+    <!-- Space: Projects -->
+    <!-- Parent: ZshVscodium -->
+    <!-- Title: Installation Antigen ZshVscodium -->
+    <!-- Label: ZshVscodium -->
+    <!-- Label: Project -->
+    <!-- Label: Installation -->
+    <!-- Label: Antigen -->
+    <!-- Include: docs/disclaimer.md -->
+    <!-- Include: ac:toc -->
 
 ### [antigen](https://github.com/zsh-users/antigen) users
 
@@ -66,15 +64,14 @@ If you're using [Antigen](https://github.com/zsh-users/antigen), install this pl
 1.  Add `antigen bundle luismayta/zsh-vscodium` to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antigen bundle luismayta/zsh-vscodium` in a running zsh session.
 3.  Enjoy!
-    <!-- Space: ZshVscodium -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antibody -->
-
-<!-- Label: ZshVscodium -->
-<!-- Label: Project -->
-<!-- Label: Installation -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
+    <!-- Space: Projects -->
+    <!-- Parent: ZshVscodium -->
+    <!-- Title: Installation Antibody ZshVscodium -->
+    <!-- Label: ZshVscodium -->
+    <!-- Label: Project -->
+    <!-- Label: Installation -->
+    <!-- Include: docs/disclaimer.md -->
+    <!-- Include: ac:toc -->
 
 ### [antibody](https://github.com/getantibody/antibody) users
 
@@ -83,7 +80,7 @@ If you're using [Antibody](https://github.com/getantibody/antibody), install thi
 1.  Add :
 
 ```{.sourceCode .bash}
-     antibody bundle luismayta/zsh-vscodium
+antibody bundle luismayta/zsh-vscodium
 ```
 
 to your `.zshrc` where you're adding your other plugins.
@@ -91,12 +88,19 @@ to your `.zshrc` where you're adding your other plugins.
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle luismayta/zsh-vscodium` in a running zsh session.
 3.  Enjoy!
 
- <!-- Space: ZshVscodium -->
-<!-- Parent: Project -->
-<!-- Title: Functions -->
+## Usage
 
+# How to use this project
+
+```bash
+task setup
+```
+
+ <!-- Space: Projects -->
+<!-- Parent: ZshVscodium -->
+<!-- Title: Functions ZshVscodium -->
 <!-- Label: Functions -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 ## Functions
@@ -123,22 +127,7 @@ File a GitHub [issue](https://github.com/luismayta/zsh-vscodium/issues).
 
 ## Contributing
 
-### Bug Reports & Feature Requests
-
-Please use the [issue tracker](https://github.com/luismayta/zsh-vscodium/issues) to report any bugs or file feature requests.
-
-### Development
-
-In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
-
-1.  **Fork** the repo on GitHub
-2.  **Clone** the project to your own machine
-3.  **Commit** changes to your own branch
-4.  **Push** your work back up to your fork
-
-5.  Submit a **Pull Request** so that we can review your changes
-
-**NOTE:** Be sure to rebase the latest changes from "upstream" before making a pull request!
+See [Contributing](./docs/contributing.md).
 
 ## Module Versioning
 
@@ -157,7 +146,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2022 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2023 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 
