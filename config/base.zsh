@@ -22,6 +22,7 @@ export VSCODIUM_PACKAGES=(
         golang.go
 
         kumar-harsh.graphql-for-vscode
+
         # dart
         luanpotter.dart-import
         Dart-Code.dart-code
@@ -37,6 +38,7 @@ export VSCODIUM_PACKAGES=(
         # pub
         everettjf.pubspec-dependency-search
 
+        # IaC
         4ops.terraform
 
         # appareance
