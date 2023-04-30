@@ -1,11 +1,10 @@
-<!-- Space: ZshVscodium -->
-<!-- Parent: Project -->
-<!-- Title: Components -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshVscodium -->
+<!-- Title: Components ZshVscodium -->
 <!-- Label: ZshVscodium -->
 <!-- Label: Project -->
 <!-- Label: Components -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
-# components
+# Components

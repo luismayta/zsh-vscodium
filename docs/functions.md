@@ -1,9 +1,8 @@
-<!-- Space: ZshVscodium -->
-<!-- Parent: Project -->
-<!-- Title: Functions -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshVscodium -->
+<!-- Title: Functions ZshVscodium -->
 <!-- Label: Functions -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 ## Functions

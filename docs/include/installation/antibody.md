@@ -1,7 +1,6 @@
-<!-- Space: ZshVscodium -->
-<!-- Parent: Project -->
-<!-- Title: Project Installation Antibody -->
-
+<!-- Space: Projects -->
+<!-- Parent: ZshVscodium -->
+<!-- Title: Installation Antibody ZshVscodium -->
 <!-- Label: ZshVscodium -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
@@ -15,7 +14,7 @@ If you're using [Antibody](https://github.com/getantibody/antibody), install thi
 1.  Add :
 
 ```{.sourceCode .bash}
-     antibody bundle luismayta/zsh-vscodium
+antibody bundle luismayta/zsh-vscodium
 ```
 
 to your `.zshrc` where you're adding your other plugins.
