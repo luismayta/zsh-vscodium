@@ -37,6 +37,7 @@ export VSCODIUM_PACKAGES=(
 
         # pub
         everettjf.pubspec-dependency-search
+        jeroen-meijer.pubspec-assist
 
         # IaC
         4ops.terraform
