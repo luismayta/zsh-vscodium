@@ -20,3 +20,8 @@ function vscodium::internal::packages::install {
        vscodium::internal::extension::install "${package}"
     done
 }
+
+function vscodium::internal::config::vim {
+    message_info "Configuration vim for vscodium"
+    message_success "Configuration vim for vscodium"
+}

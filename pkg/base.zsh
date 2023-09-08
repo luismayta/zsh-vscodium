@@ -20,4 +20,5 @@ function vscodium::post_install {
     fi
     vscodium::packages::install
     vscodium::sync
+    vscodium::internal::config::vim
 }
