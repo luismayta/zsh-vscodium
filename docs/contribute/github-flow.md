@@ -1,7 +1,7 @@
 <!-- Space: Projects -->
 <!-- Parent: ZshVscodium -->
-<!-- Title: Contributing GithubFlow BaseTemplate -->
-<!-- Label: BaseTemplate -->
+<!-- Title: Contributing GithubFlow ZshVscodium -->
+<!-- Label: ZshVscodium -->
 <!-- Label: Project -->
 <!-- Label: Contributing -->
 <!-- Label: GithubFlow -->

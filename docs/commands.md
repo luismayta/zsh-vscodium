@@ -9,8 +9,6 @@
 
 # Commands
 
-## Pipenv
-
 ## Taskfile
 
 ### Confluence
