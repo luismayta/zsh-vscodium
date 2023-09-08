@@ -23,9 +23,9 @@ zsh-vscodium for project
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
 - [zsh-core](https://github.com/hadenlabs/zsh-core)
-
-* [python](https://www.python.org)
-* [taskfile](https://github.com/go-task/task)
+- [gomplate](https://github.com/hairyhenderson/gomplate)
+- [python](https://www.python.org)
+- [taskfile](https://github.com/go-task/task)
 
 ## Installation
 
@@ -77,7 +77,7 @@ If you're using [Antigen](https://github.com/zsh-users/antigen), install this pl
 
 If you're using [Antibody](https://github.com/getantibody/antibody), install this plugin by doing the following:
 
-1.  Add :
+1. Add :
 
 ```{.sourceCode .bash}
 antibody bundle luismayta/zsh-vscodium
@@ -85,8 +85,8 @@ antibody bundle luismayta/zsh-vscodium
 
 to your `.zshrc` where you're adding your other plugins.
 
-2.  Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle luismayta/zsh-vscodium` in a running zsh session.
-3.  Enjoy!
+2. Either open a new terminal to force zsh to load the new plugin, or run `antibody bundle luismayta/zsh-vscodium` in a running zsh session.
+3. Enjoy!
 
 ## Usage
 
@@ -95,6 +95,17 @@ to your `.zshrc` where you're adding your other plugins.
 ```bash
 task setup
 ```
+
+## Examples
+
+<!-- Space: Projects -->
+<!-- Parent: ZshVscodium -->
+<!-- Title: Examples ZshVscodium -->
+<!-- Label: Examples -->
+<!-- Include: ./../disclaimer.md -->
+<!-- Include: ac:toc -->
+
+### Common
 
  <!-- Space: Projects -->
 <!-- Parent: ZshVscodium -->
