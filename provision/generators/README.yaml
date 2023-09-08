@@ -11,7 +11,7 @@ email:
   support: support@hadenlabs.com
 
 # Logo for this project
-#logo: docs/logo.png
+# logo: docs/logo.png
 
 # License of this project
 license: "LGPL-3.0"
@@ -37,25 +37,29 @@ badges:
     image: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange
     url: https://keepachangelog.com
 
+# Short description of this project
+description: |-
+  zsh-vscodium for project
+
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-  * [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [python](https://www.python.org)
   - [taskfile](https://github.com/go-task/task)
-
-# Short description of this project
-description: |-
-  zsh-vscodium for project
 
 installation:
   - "docs/include/installation/oh-my-zsh.md"
   - "docs/include/installation/antigen.md"
   - "docs/include/installation/antibody.md"
 
+include:
+  - "docs/functions.md"
+
 usages:
   - docs/usage.md
 
-include:
-  - "docs/functions.md"
+examples:
+  - "docs/examples/common.md"
