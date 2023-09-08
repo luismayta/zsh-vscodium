@@ -17,7 +17,7 @@
   "extensions.ignoreRecommendations": false,
   "editor.formatOnPaste": true,
   "editor.fontFamily": "Fira Code Retina, Menlo, Monaco, Courier New, monospace",
-  "editor.fontSize": 17,
+  "editor.fontSize": 18,
   "editor.lineHeight": 24,
   "editor.fontLigatures": true,
   "editor.fontWeight": "normal",
@@ -148,19 +148,35 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "m"],
-      "commands": [{ "command": "bookmarks.toggle" }]
+      "commands": [
+        {
+          "command": "bookmarks.toggle"
+        }
+      ]
     },
     {
       "before": ["<leader>", "b"],
-      "commands": [{ "command": "bookmarks.list" }]
+      "commands": [
+        {
+          "command": "bookmarks.list"
+        }
+      ]
     },
     {
       "before": ["z", "i"],
-      "commands": [{ "command": "workbench.action.zoomIn" }]
+      "commands": [
+        {
+          "command": "workbench.action.zoomIn"
+        }
+      ]
     },
     {
       "before": ["z", "o"],
-      "commands": [{ "command": "workbench.action.zoomOut" }]
+      "commands": [
+        {
+          "command": "workbench.action.zoomOut"
+        }
+      ]
     },
     {
       "before": ["leader", "w"],
@@ -294,7 +310,11 @@
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["?"],
-      "commands": [{ "command": "workbench.action.findInFiles" }]
+      "commands": [
+        {
+          "command": "workbench.action.findInFiles"
+        }
+      ]
     },
     {
       "before": [">"],
@@ -368,7 +388,7 @@
     "opacity": 50
   },
   "todo-tree.tree.showScanModeButton": false,
-  "editor.accessibilitySupport": "on",
+  "editor.accessibilitySupport": "off",
   "workbench.colorTheme": "Atom One Dark",
   "[dart]": {
     "editor.formatOnSave": true,
@@ -380,5 +400,22 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
-  "tabnine.experimentalAutoImports": true
+  "tabnine.experimentalAutoImports": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "dart.openDevTools": "flutter",
+  "audioCues.diffLineDeleted": "off",
+  "audioCues.diffLineInserted": "off",
+  "audioCues.diffLineModified": "off",
+  "audioCues.lineHasBreakpoint": "off",
+  "audioCues.lineHasError": "off",
+  "audioCues.lineHasFoldedArea": "off",
+  "audioCues.lineHasInlineSuggestion": "off",
+  "audioCues.noInlayHints": "off",
+  "audioCues.notebookCellCompleted": "off",
+  "audioCues.notebookCellFailed": "off",
+  "audioCues.onDebugBreak": "off",
+  "audioCues.taskCompleted": "off",
+  "audioCues.taskFailed": "off",
+  "audioCues.terminalCommandFailed": "off",
+  "audioCues.terminalQuickFix": "off"
 }
