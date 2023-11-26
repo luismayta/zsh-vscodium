@@ -7,7 +7,7 @@ export VSCODE_GALLERY_ITEM_URL='https://marketplace.visualstudio.com/items'
 export VSCODE_GALLERY_CONTROL_URL=''
 export VSCODE_GALLERY_RECOMMENDATIONS_URL=''
 export VSCODIUM_PACKAGE_NAME="vscodium"
-export VSCODIUM_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/zsh-brew branch:develop"
+export VSCODIUM_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/zsh-brew"
 export VSCODIUM_MESSAGE_NOT_FOUND="this not found installed"
 export VSCODIUM_PACKAGES=(
         EditorConfig.EditorConfig
@@ -100,6 +100,8 @@ export VSCODIUM_PACKAGES=(
         vscode-icons-team.vscode-icons
         nutstick.challenger-deep-monokai
         akamud.vscode-theme-onedark
+        Catppuccin.catppuccin-vsc
+        Catppuccin.catppuccin-vsc-icons
 
         # vim
         vscodevim.vim
