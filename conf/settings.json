@@ -400,7 +400,6 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
-  "tabnine.experimentalAutoImports": true,
   "vsicons.dontShowNewVersionMessage": true,
   "dart.openDevTools": "flutter",
   "audioCues.diffLineDeleted": "off",
