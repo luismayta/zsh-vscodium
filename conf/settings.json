@@ -361,7 +361,7 @@
   "markdown.preview.fontSize": 16,
   "path-intellisense.autoSlashAfterDirectory": true,
   "explorer.confirmDragAndDrop": false,
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "catppuccin-mocha",
   "window.restoreFullscreen": true,
   "go.lintTool": "gometalinter",
   "go.formatTool": "goimports",
@@ -389,7 +389,7 @@
   },
   "todo-tree.tree.showScanModeButton": false,
   "editor.accessibilitySupport": "off",
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
