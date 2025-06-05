@@ -176,6 +176,23 @@ files = [
 test = ["coverage", "mypy", "pexpect", "ruff", "wheel"]
 
 [[package]]
+name = "asteval"
+version = "1.0.5"
+description = "Safe, minimalistic evaluator of python expression using ast module"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "asteval-1.0.5-py3-none-any.whl", hash = "sha256:082b95312578affc8a6d982f7d92b7ac5de05634985c87e7eedd3188d31149fa"},
+    {file = "asteval-1.0.5.tar.gz", hash = "sha256:bac3c8dd6d2b789e959cfec9bb296fb8338eec066feae618c462132701fbc665"},
+]
+
+[package.extras]
+all = ["asteval[dev,doc,test]"]
+dev = ["build", "twine"]
+doc = ["Sphinx"]
+test = ["coverage", "pytest", "pytest-cov"]
+
+[[package]]
 name = "astroid"
 version = "2.15.8"
 description = "An abstract syntax tree for Python with inference support."
@@ -239,13 +256,13 @@ pytz = {version = ">=2015.7", markers = "python_version < \"3.9\""}
 
 [[package]]
 name = "bc-detect-secrets"
-version = "1.5.40"
+version = "1.5.41"
 description = "Tool for detecting secrets in the codebase"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "bc_detect_secrets-1.5.40-py3-none-any.whl", hash = "sha256:05cf26afcddf6296e09b16f498475b4adc026696bfe2ce50a1a916f88d14aca3"},
-    {file = "bc_detect_secrets-1.5.40.tar.gz", hash = "sha256:5982369c359ef58379a8234168a3820d9273cdc0776dcc0efe6904c2a37c51d8"},
+    {file = "bc_detect_secrets-1.5.41-py3-none-any.whl", hash = "sha256:629df912f2a4f4d5039cc1fece906c34700586f7db1ae6a8d1c830c25df6db9b"},
+    {file = "bc_detect_secrets-1.5.41.tar.gz", hash = "sha256:4bd08292a975bfc9b95771e118dd1131e1afbd479610eb29e4e0c15bd33677fc"},
 ]
 
 [package.dependencies]
@@ -434,17 +451,17 @@ crt = ["awscrt (==0.22.0)"]
 
 [[package]]
 name = "bridgecrew"
-version = "3.2.404"
+version = "3.2.437"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-3.2.404-py3-none-any.whl", hash = "sha256:6c633c86fa29844f346db8002aa8def88eb934e2421145c7bb15d3a56c4a9d51"},
-    {file = "bridgecrew-3.2.404.tar.gz", hash = "sha256:c4dab23d63b70e14a2bacf3617fbe78e37a331e9bd034963a0b6acdb5f361c9a"},
+    {file = "bridgecrew-3.2.437-py3-none-any.whl", hash = "sha256:5758dda1eae6b52d56a0d4cafa6979e9cbc92969545fb88bc74e2a9380b7d7ec"},
+    {file = "bridgecrew-3.2.437.tar.gz", hash = "sha256:4790df88fb18f98e29896d7d92ffb632006349ee76276d089c80fdbfd2eb9ef6"},
 ]
 
 [package.dependencies]
-checkov = "3.2.404"
+checkov = "3.2.437"
 
 [[package]]
 name = "bump2version"
@@ -680,13 +697,13 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "3.2.404"
+version = "3.2.437"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "checkov-3.2.404-py3-none-any.whl", hash = "sha256:cd9b7f36f652d8a1b78d87624c4b9a5a51742613717663d80640fb1d31781bba"},
-    {file = "checkov-3.2.404.tar.gz", hash = "sha256:8c83c02bd6a5464ab025b9580d085d67be2e57644ba8603e934a6801ed07412a"},
+    {file = "checkov-3.2.437-py3-none-any.whl", hash = "sha256:a28e128e9ed15365dd616b7d06b94b91aad8621658b5b10049693e7147cb5b66"},
+    {file = "checkov-3.2.437.tar.gz", hash = "sha256:7ed9cc6c3ec89f83c25892cadb083bf438ddb2728d2e5cc42de6a4b49bf3d831"},
 ]
 
 [package.dependencies]
@@ -694,7 +711,8 @@ aiodns = ">=3.0.0,<4.0.0"
 aiohttp = ">=3.8.0,<4.0.0"
 aiomultiprocess = ">=0.9.0,<0.10.0"
 argcomplete = ">=3.0.0,<4.0.0"
-bc-detect-secrets = "1.5.40"
+asteval = "1.0.5"
+bc-detect-secrets = "1.5.41"
 bc-jsonpath-ng = "1.6.1"
 bc-python-hcl2 = "0.4.2"
 boto3 = "1.35.49"
@@ -715,7 +733,6 @@ jsonschema = ">=4.17.0,<5.0.0"
 junit-xml = ">=1.9,<2.0"
 license-expression = ">=30.1.0,<31.0.0"
 networkx = "<2.7"
-openai = "<1.0.0"
 packageurl-python = ">=0.11.1,<0.14.0"
 packaging = ">=23.0,<24.0"
 prettytable = ">=3.6.0,<4.0.0"
@@ -1838,28 +1855,6 @@ files = [
     {file = "numpy-1.24.4-pp38-pypy38_pp73-win_amd64.whl", hash = "sha256:e98f220aa76ca2a977fe435f5b04d7b3470c0a2e6312907b37ba6068f26787f2"},
     {file = "numpy-1.24.4.tar.gz", hash = "sha256:80f5e3a4e498641401868df4208b74581206afbee7cf7b8329daae82676d9463"},
 ]
-
-[[package]]
-name = "openai"
-version = "0.28.1"
-description = "Python client library for the OpenAI API"
-optional = false
-python-versions = ">=3.7.1"
-files = [
-    {file = "openai-0.28.1-py3-none-any.whl", hash = "sha256:d18690f9e3d31eedb66b57b88c2165d760b24ea0a01f150dd3f068155088ce68"},
-    {file = "openai-0.28.1.tar.gz", hash = "sha256:4be1dad329a65b4ce1a660fe6d5431b438f429b5855c883435f0f7fcb6d2dcc8"},
-]
-
-[package.dependencies]
-aiohttp = "*"
-requests = ">=2.20"
-tqdm = "*"
-
-[package.extras]
-datalib = ["numpy", "openpyxl (>=3.0.7)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)"]
-dev = ["black (>=21.6b0,<22.0)", "pytest (==6.*)", "pytest-asyncio", "pytest-mock"]
-embeddings = ["matplotlib", "numpy", "openpyxl (>=3.0.7)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)", "plotly", "scikit-learn (>=1.0.2)", "scipy", "tenacity (>=8.0.1)"]
-wandb = ["numpy", "openpyxl (>=3.0.7)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)", "wandb"]
 
 [[package]]
 name = "orjson"
